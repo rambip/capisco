@@ -1,0 +1,11 @@
+# A1 — beginner. Only the ~1000 most frequent content words, short sentences.
+# (level/label are read by the deck-build script for the chooser manifest;
+#  pipeline.py ignores them.)
+level: A1
+label: A1 · beginner
+n: 300
+min_rank: 0
+max_rank: 1000
+min_tokens: 3
+max_tokens: 8
+output: decks/a1.json

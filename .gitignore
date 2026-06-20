@@ -1,0 +1,22 @@
+# Python-generated files
+__pycache__/
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
+
+# Virtual environments
+.venv
+
+# Secrets / local data
+.env
+*.tsv
+sentences*.json
+
+# built decks (published as GitHub release assets, not committed)
+decks/
+
+# local-only files (planning notes, UI test fixture)
+TODO.md
+test_noeq.json

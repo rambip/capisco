@@ -1,0 +1,9381 @@
+[
+  {
+    "en": "I have to go to sleep.",
+    "en_tokens": [
+      "I",
+      "have",
+      "to",
+      "go",
+      "to",
+      "sleep",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Devo",
+        "pos": "AUX",
+        "lemma": "dovere",
+        "space": true,
+        "align": [
+          0,
+          1,
+          2
+        ],
+        "dep": "aux",
+        "mark": ""
+      },
+      {
+        "text": "andare",
+        "pos": "VERB",
+        "lemma": "andare",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "a",
+        "pos": "ADP",
+        "lemma": "a",
+        "space": true,
+        "align": [],
+        "dep": "mark",
+        "mark": ""
+      },
+      {
+        "text": "dormire",
+        "pos": "VERB",
+        "lemma": "dormire",
+        "space": false,
+        "align": [
+          4,
+          5
+        ],
+        "dep": "xcomp",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          6
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "What is it?",
+    "en_tokens": [
+      "What",
+      "is",
+      "it",
+      "?"
+    ],
+    "en_space": [
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Che",
+        "pos": "DET",
+        "lemma": "che",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "cos'",
+        "pos": "PRON",
+        "lemma": "cos'",
+        "space": false,
+        "align": [
+          0
+        ],
+        "dep": "obj",
+        "mark": ""
+      },
+      {
+        "text": "è",
+        "pos": "VERB",
+        "lemma": "essere",
+        "space": false,
+        "align": [
+          1,
+          2
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "?",
+        "pos": "PUNCT",
+        "lemma": "?",
+        "space": false,
+        "align": [
+          3
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "The password is \"Muiriel\".",
+    "en_tokens": [
+      "The",
+      "password",
+      "is",
+      "\"",
+      "Muiriel",
+      "\"",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      false,
+      false,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "La",
+        "pos": "DET",
+        "lemma": "il",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "parola",
+        "pos": "NOUN",
+        "lemma": "parola",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "nsubj",
+        "mark": ""
+      },
+      {
+        "text": "d'",
+        "pos": "ADP",
+        "lemma": "di",
+        "space": false,
+        "align": [],
+        "dep": "case",
+        "mark": ""
+      },
+      {
+        "text": "accesso",
+        "pos": "NOUN",
+        "lemma": "accesso",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "nmod",
+        "mark": ""
+      },
+      {
+        "text": "è",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "\"",
+        "pos": "PUNCT",
+        "lemma": "\"",
+        "space": false,
+        "align": [
+          3
+        ],
+        "dep": "punct",
+        "mark": ""
+      },
+      {
+        "text": "Muiriel",
+        "pos": "PROPN",
+        "lemma": "Muiriel",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "\"",
+        "pos": "PUNCT",
+        "lemma": "\"",
+        "space": false,
+        "align": [
+          5
+        ],
+        "dep": "punct",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          6
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "That won't change anything.",
+    "en_tokens": [
+      "That",
+      "won",
+      "'",
+      "t",
+      "change",
+      "anything",
+      "."
+    ],
+    "en_space": [
+      true,
+      false,
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Non",
+        "pos": "ADV",
+        "lemma": "non",
+        "space": true,
+        "align": [
+          1,
+          2,
+          3
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "cambierà",
+        "pos": "VERB",
+        "lemma": "cambiare",
+        "space": true,
+        "align": [
+          4
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "niente",
+        "pos": "PRON",
+        "lemma": "niente",
+        "space": false,
+        "align": [
+          5
+        ],
+        "dep": "obj",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          6
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "Don't worry.",
+    "en_tokens": [
+      "Don",
+      "'",
+      "t",
+      "worry",
+      "."
+    ],
+    "en_space": [
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Non",
+        "pos": "ADV",
+        "lemma": "non",
+        "space": true,
+        "align": [
+          0,
+          1,
+          2
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "ti",
+        "pos": "PRON",
+        "lemma": "ti",
+        "space": true,
+        "align": [
+          0,
+          1,
+          2
+        ],
+        "dep": "obj",
+        "mark": ""
+      },
+      {
+        "text": "preoccupare",
+        "pos": "VERB",
+        "lemma": "preoccupare",
+        "space": false,
+        "align": [
+          3
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "It's not important.",
+    "en_tokens": [
+      "It",
+      "'",
+      "s",
+      "not",
+      "important",
+      "."
+    ],
+    "en_space": [
+      false,
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Non",
+        "pos": "ADV",
+        "lemma": "non",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "è",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          0,
+          1,
+          2
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "importante",
+        "pos": "ADJ",
+        "lemma": "importante",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          5
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "I wish I could go to Japan.",
+    "en_tokens": [
+      "I",
+      "wish",
+      "I",
+      "could",
+      "go",
+      "to",
+      "Japan",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Mi",
+        "pos": "PRON",
+        "lemma": "mi",
+        "space": true,
+        "align": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "dep": "iobj",
+        "mark": ""
+      },
+      {
+        "text": "piacerebbe",
+        "pos": "VERB",
+        "lemma": "piacere",
+        "space": true,
+        "align": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "tanto",
+        "pos": "ADV",
+        "lemma": "tanto",
+        "space": true,
+        "align": [],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "andare",
+        "pos": "VERB",
+        "lemma": "andare",
+        "space": true,
+        "align": [
+          4
+        ],
+        "dep": "csubj",
+        "mark": ""
+      },
+      {
+        "text": "in",
+        "pos": "ADP",
+        "lemma": "in",
+        "space": true,
+        "align": [
+          5
+        ],
+        "dep": "case",
+        "mark": ""
+      },
+      {
+        "text": "Giappone",
+        "pos": "PROPN",
+        "lemma": "Giappone",
+        "space": false,
+        "align": [
+          6
+        ],
+        "dep": "obl",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          7
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "Except that here, it's not so simple.",
+    "en_tokens": [
+      "Except",
+      "that",
+      "here",
+      ",",
+      "it",
+      "'",
+      "s",
+      "not",
+      "so",
+      "simple",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      false,
+      true,
+      false,
+      false,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Salvo",
+        "pos": "ADJ",
+        "lemma": "salvo",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "mark",
+        "mark": ""
+      },
+      {
+        "text": "che",
+        "pos": "PRON",
+        "lemma": "che",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "fixed",
+        "mark": ""
+      },
+      {
+        "text": "qui",
+        "pos": "ADV",
+        "lemma": "qui",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "non",
+        "pos": "ADV",
+        "lemma": "non",
+        "space": true,
+        "align": [
+          7
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "è",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "così",
+        "pos": "ADV",
+        "lemma": "così",
+        "space": true,
+        "align": [
+          8
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "semplice",
+        "pos": "ADJ",
+        "lemma": "semplice",
+        "space": false,
+        "align": [
+          9
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          10
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "You're not fast enough.",
+    "en_tokens": [
+      "You",
+      "'",
+      "re",
+      "not",
+      "fast",
+      "enough",
+      "."
+    ],
+    "en_space": [
+      false,
+      false,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Non",
+        "pos": "ADV",
+        "lemma": "non",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "sei",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          0,
+          1,
+          2
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "abbastanza",
+        "pos": "ADV",
+        "lemma": "abbastanza",
+        "space": true,
+        "align": [
+          5
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "veloce",
+        "pos": "ADJ",
+        "lemma": "veloce",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          6
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "This is a pun.",
+    "en_tokens": [
+      "This",
+      "is",
+      "a",
+      "pun",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "È",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          0,
+          1
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "un",
+        "pos": "DET",
+        "lemma": "uno",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "gioco",
+        "pos": "NOUN",
+        "lemma": "gioco",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "di",
+        "pos": "ADP",
+        "lemma": "di",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "case",
+        "mark": ""
+      },
+      {
+        "text": "parole",
+        "pos": "NOUN",
+        "lemma": "parola",
+        "space": false,
+        "align": [
+          3
+        ],
+        "dep": "nmod",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "It can't be!",
+    "en_tokens": [
+      "It",
+      "can",
+      "'",
+      "t",
+      "be",
+      "!"
+    ],
+    "en_space": [
+      true,
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Non",
+        "pos": "ADV",
+        "lemma": "non",
+        "space": true,
+        "align": [
+          1,
+          3
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "è",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          4
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "possibile",
+        "pos": "ADJ",
+        "lemma": "possibile",
+        "space": false,
+        "align": [
+          0,
+          2
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          5
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "Who is it? \"It's your mother.\"",
+    "en_tokens": [
+      "Who",
+      "is",
+      "it",
+      "?",
+      "\"",
+      "It",
+      "'",
+      "s",
+      "your",
+      "mother",
+      ".",
+      "\""
+    ],
+    "en_space": [
+      true,
+      true,
+      false,
+      true,
+      false,
+      false,
+      false,
+      true,
+      true,
+      false,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Chi",
+        "pos": "PRON",
+        "lemma": "chi",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "è",
+        "pos": "VERB",
+        "lemma": "essere",
+        "space": false,
+        "align": [
+          1
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "?",
+        "pos": "PUNCT",
+        "lemma": "?",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "punct",
+        "mark": ""
+      },
+      {
+        "text": "\"",
+        "pos": "PUNCT",
+        "lemma": "\"",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "punct",
+        "mark": ""
+      },
+      {
+        "text": "È",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          5,
+          6,
+          7
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "tua",
+        "pos": "DET",
+        "lemma": "tuo",
+        "space": true,
+        "align": [
+          8
+        ],
+        "dep": "det:poss",
+        "mark": ""
+      },
+      {
+        "text": "madre",
+        "pos": "NOUN",
+        "lemma": "madre",
+        "space": false,
+        "align": [
+          9
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          10
+        ],
+        "dep": "punct",
+        "mark": ""
+      },
+      {
+        "text": "\"",
+        "pos": "PUNCT",
+        "lemma": "\"",
+        "space": false,
+        "align": [
+          11
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "You're an angel!",
+    "en_tokens": [
+      "You",
+      "'",
+      "re",
+      "an",
+      "angel",
+      "!"
+    ],
+    "en_space": [
+      false,
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Sei",
+        "pos": "AUX",
+        "lemma": "sei",
+        "space": true,
+        "align": [
+          0,
+          1,
+          2
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "un",
+        "pos": "DET",
+        "lemma": "uno",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "angelo",
+        "pos": "NOUN",
+        "lemma": "angelo",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "!",
+        "pos": "PUNCT",
+        "lemma": "!",
+        "space": false,
+        "align": [
+          5
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "Don't open before the train stops.",
+    "en_tokens": [
+      "Don",
+      "'",
+      "t",
+      "open",
+      "before",
+      "the",
+      "train",
+      "stops",
+      "."
+    ],
+    "en_space": [
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Non",
+        "pos": "ADV",
+        "lemma": "non",
+        "space": true,
+        "align": [
+          0,
+          1,
+          2
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "aprire",
+        "pos": "VERB",
+        "lemma": "aprire",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "prima",
+        "pos": "ADV",
+        "lemma": "prima",
+        "space": true,
+        "align": [
+          4
+        ],
+        "dep": "mark",
+        "mark": ""
+      },
+      {
+        "text": "che",
+        "pos": "SCONJ",
+        "lemma": "che",
+        "space": true,
+        "align": [],
+        "dep": "fixed",
+        "mark": ""
+      },
+      {
+        "text": "il",
+        "pos": "DET",
+        "lemma": "il",
+        "space": true,
+        "align": [
+          5
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "treno",
+        "pos": "NOUN",
+        "lemma": "treno",
+        "space": true,
+        "align": [
+          6
+        ],
+        "dep": "nsubj",
+        "mark": ""
+      },
+      {
+        "text": "sia",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          7
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "fermo",
+        "pos": "ADJ",
+        "lemma": "fermo",
+        "space": false,
+        "align": [
+          7
+        ],
+        "dep": "advcl",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          8
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "The only useful answers are those that raise new questions.",
+    "en_tokens": [
+      "The",
+      "only",
+      "useful",
+      "answers",
+      "are",
+      "those",
+      "that",
+      "raise",
+      "new",
+      "questions",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Le",
+        "pos": "DET",
+        "lemma": "il",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "sole",
+        "pos": "ADJ",
+        "lemma": "solo",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "amod",
+        "mark": ""
+      },
+      {
+        "text": "risposte",
+        "pos": "NOUN",
+        "lemma": "risposta",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "nsubj",
+        "mark": ""
+      },
+      {
+        "text": "utili",
+        "pos": "ADJ",
+        "lemma": "utile",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "amod",
+        "mark": ""
+      },
+      {
+        "text": "sono",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          4
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "quelle",
+        "pos": "PRON",
+        "lemma": "quello",
+        "space": true,
+        "align": [
+          5
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "che",
+        "pos": "PRON",
+        "lemma": "che",
+        "space": true,
+        "align": [
+          6
+        ],
+        "dep": "nsubj",
+        "mark": ""
+      },
+      {
+        "text": "propongono",
+        "pos": "VERB",
+        "lemma": "proporre",
+        "space": true,
+        "align": [
+          7
+        ],
+        "dep": "acl:relcl",
+        "mark": ""
+      },
+      {
+        "text": "nuove",
+        "pos": "ADJ",
+        "lemma": "nuovo",
+        "space": true,
+        "align": [
+          8
+        ],
+        "dep": "amod",
+        "mark": ""
+      },
+      {
+        "text": "domande",
+        "pos": "NOUN",
+        "lemma": "domanda",
+        "space": false,
+        "align": [
+          9
+        ],
+        "dep": "obj",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          10
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "I can't live without a TV.",
+    "en_tokens": [
+      "I",
+      "can",
+      "'",
+      "t",
+      "live",
+      "without",
+      "a",
+      "TV",
+      "."
+    ],
+    "en_space": [
+      true,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Non",
+        "pos": "ADV",
+        "lemma": "non",
+        "space": true,
+        "align": [
+          1,
+          2,
+          3
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "posso",
+        "pos": "AUX",
+        "lemma": "potere",
+        "space": true,
+        "align": [
+          1,
+          2,
+          3
+        ],
+        "dep": "aux",
+        "mark": ""
+      },
+      {
+        "text": "vivere",
+        "pos": "VERB",
+        "lemma": "vivere",
+        "space": true,
+        "align": [
+          4
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "senza",
+        "pos": "ADP",
+        "lemma": "senza",
+        "space": true,
+        "align": [
+          5
+        ],
+        "dep": "case",
+        "mark": ""
+      },
+      {
+        "text": "TV",
+        "pos": "NOUN",
+        "lemma": "TV",
+        "space": false,
+        "align": [
+          6,
+          7
+        ],
+        "dep": "obl",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          8
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "Life without love is just totally pointless.",
+    "en_tokens": [
+      "Life",
+      "without",
+      "love",
+      "is",
+      "just",
+      "totally",
+      "pointless",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Una",
+        "pos": "DET",
+        "lemma": "uno",
+        "space": true,
+        "align": [],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "vita",
+        "pos": "NOUN",
+        "lemma": "vita",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "nsubj",
+        "mark": ""
+      },
+      {
+        "text": "senza",
+        "pos": "ADP",
+        "lemma": "senza",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "case",
+        "mark": ""
+      },
+      {
+        "text": "amore",
+        "pos": "NOUN",
+        "lemma": "amore",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "nmod",
+        "mark": ""
+      },
+      {
+        "text": "non",
+        "pos": "ADV",
+        "lemma": "non",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "ha",
+        "pos": "VERB",
+        "lemma": "avere",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "assolutamente",
+        "pos": "ADV",
+        "lemma": "assolutamente",
+        "space": true,
+        "align": [
+          4,
+          5
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "alcun",
+        "pos": "DET",
+        "lemma": "alcuno",
+        "space": true,
+        "align": [
+          6
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "senso",
+        "pos": "NOUN",
+        "lemma": "senso",
+        "space": false,
+        "align": [
+          6
+        ],
+        "dep": "obj",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          7
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "We can't sleep because of the noise.",
+    "en_tokens": [
+      "We",
+      "can",
+      "'",
+      "t",
+      "sleep",
+      "because",
+      "of",
+      "the",
+      "noise",
+      "."
+    ],
+    "en_space": [
+      true,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Non",
+        "pos": "ADV",
+        "lemma": "non",
+        "space": true,
+        "align": [
+          2,
+          3
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "riusciamo",
+        "pos": "VERB",
+        "lemma": "riuscire",
+        "space": true,
+        "align": [
+          0,
+          1
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "a",
+        "pos": "ADP",
+        "lemma": "a",
+        "space": true,
+        "align": [],
+        "dep": "mark",
+        "mark": ""
+      },
+      {
+        "text": "dormire",
+        "pos": "VERB",
+        "lemma": "dormire",
+        "space": true,
+        "align": [
+          4
+        ],
+        "dep": "xcomp",
+        "mark": ""
+      },
+      {
+        "text": "dal",
+        "pos": "ADP",
+        "lemma": "da il",
+        "space": true,
+        "align": [
+          5,
+          6
+        ],
+        "dep": "case",
+        "mark": ""
+      },
+      {
+        "text": "rumore",
+        "pos": "NOUN",
+        "lemma": "rumore",
+        "space": false,
+        "align": [
+          7,
+          8
+        ],
+        "dep": "obl",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          9
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "To be perfect she lacked just one defect.",
+    "en_tokens": [
+      "To",
+      "be",
+      "perfect",
+      "she",
+      "lacked",
+      "just",
+      "one",
+      "defect",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Per",
+        "pos": "ADP",
+        "lemma": "per",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "mark",
+        "mark": ""
+      },
+      {
+        "text": "essere",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "perfetta",
+        "pos": "ADJ",
+        "lemma": "perfetto",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "advcl",
+        "mark": ""
+      },
+      {
+        "text": "le",
+        "pos": "PRON",
+        "lemma": "le",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "iobj",
+        "mark": ""
+      },
+      {
+        "text": "mancava",
+        "pos": "VERB",
+        "lemma": "mancare",
+        "space": true,
+        "align": [
+          4
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "solo",
+        "pos": "ADV",
+        "lemma": "solo",
+        "space": true,
+        "align": [
+          5
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "un",
+        "pos": "DET",
+        "lemma": "uno",
+        "space": true,
+        "align": [
+          6
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "difetto",
+        "pos": "NOUN",
+        "lemma": "difetto",
+        "space": false,
+        "align": [
+          7
+        ],
+        "dep": "nsubj",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          8
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "And yet, the contrary is always true as well.",
+    "en_tokens": [
+      "And",
+      "yet",
+      ",",
+      "the",
+      "contrary",
+      "is",
+      "always",
+      "true",
+      "as",
+      "well",
+      "."
+    ],
+    "en_space": [
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Eppure",
+        "pos": "CCONJ",
+        "lemma": "eppure",
+        "space": false,
+        "align": [
+          0,
+          1
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ",",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "punct",
+        "mark": ""
+      },
+      {
+        "text": "è",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          5
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "sempre",
+        "pos": "ADV",
+        "lemma": "sempre",
+        "space": true,
+        "align": [
+          6
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "vero",
+        "pos": "ADJ",
+        "lemma": "vero",
+        "space": true,
+        "align": [
+          7
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "anche",
+        "pos": "ADV",
+        "lemma": "anche",
+        "space": true,
+        "align": [
+          8,
+          9
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "il",
+        "pos": "DET",
+        "lemma": "il",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "contrario",
+        "pos": "NOUN",
+        "lemma": "contrario",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "nsubj",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          10
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "We don't see things as they are, but as we are.",
+    "en_tokens": [
+      "We",
+      "don",
+      "'",
+      "t",
+      "see",
+      "things",
+      "as",
+      "they",
+      "are",
+      ",",
+      "but",
+      "as",
+      "we",
+      "are",
+      "."
+    ],
+    "en_space": [
+      true,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Non",
+        "pos": "ADV",
+        "lemma": "non",
+        "space": true,
+        "align": [
+          1,
+          2,
+          3
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "vediamo",
+        "pos": "VERB",
+        "lemma": "vedere",
+        "space": true,
+        "align": [
+          4
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "le",
+        "pos": "DET",
+        "lemma": "il",
+        "space": true,
+        "align": [
+          5
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "cose",
+        "pos": "NOUN",
+        "lemma": "cosa",
+        "space": true,
+        "align": [
+          5
+        ],
+        "dep": "obj",
+        "mark": ""
+      },
+      {
+        "text": "come",
+        "pos": "SCONJ",
+        "lemma": "come",
+        "space": true,
+        "align": [
+          6
+        ],
+        "dep": "mark",
+        "mark": ""
+      },
+      {
+        "text": "sono",
+        "pos": "VERB",
+        "lemma": "essere",
+        "space": false,
+        "align": [
+          7,
+          8
+        ],
+        "dep": "advcl",
+        "mark": ""
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ",",
+        "space": true,
+        "align": [
+          9
+        ],
+        "dep": "punct",
+        "mark": ""
+      },
+      {
+        "text": "ma",
+        "pos": "CCONJ",
+        "lemma": "ma",
+        "space": true,
+        "align": [
+          10
+        ],
+        "dep": "cc",
+        "mark": ""
+      },
+      {
+        "text": "come",
+        "pos": "SCONJ",
+        "lemma": "come",
+        "space": true,
+        "align": [
+          11
+        ],
+        "dep": "mark",
+        "mark": ""
+      },
+      {
+        "text": "siamo",
+        "pos": "VERB",
+        "lemma": "essere",
+        "space": false,
+        "align": [
+          12,
+          13
+        ],
+        "dep": "conj",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          14
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "You're by my side; everything's fine now.",
+    "en_tokens": [
+      "You",
+      "'",
+      "re",
+      "by",
+      "my",
+      "side",
+      ";",
+      "everything",
+      "'",
+      "s",
+      "fine",
+      "now",
+      "."
+    ],
+    "en_space": [
+      false,
+      false,
+      true,
+      true,
+      true,
+      false,
+      true,
+      false,
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Sei",
+        "pos": "NUM",
+        "lemma": "sei",
+        "space": true,
+        "align": [
+          0,
+          1,
+          2
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "vicino",
+        "pos": "ADV",
+        "lemma": "vicino",
+        "space": true,
+        "align": [
+          3,
+          4,
+          5
+        ],
+        "dep": "case",
+        "mark": ""
+      },
+      {
+        "text": "a",
+        "pos": "ADP",
+        "lemma": "a",
+        "space": true,
+        "align": [
+          3,
+          4,
+          5
+        ],
+        "dep": "fixed",
+        "mark": ""
+      },
+      {
+        "text": "me",
+        "pos": "PRON",
+        "lemma": "me",
+        "space": false,
+        "align": [
+          3,
+          4,
+          5
+        ],
+        "dep": "obl",
+        "mark": ""
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ",",
+        "space": true,
+        "align": [
+          6
+        ],
+        "dep": "punct",
+        "mark": ""
+      },
+      {
+        "text": "adesso",
+        "pos": "ADV",
+        "lemma": "adesso",
+        "space": true,
+        "align": [
+          11
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "tutto",
+        "pos": "PRON",
+        "lemma": "tutto",
+        "space": true,
+        "align": [
+          7,
+          8,
+          9
+        ],
+        "dep": "nsubj",
+        "mark": ""
+      },
+      {
+        "text": "va",
+        "pos": "VERB",
+        "lemma": "andare",
+        "space": true,
+        "align": [
+          7,
+          8,
+          9,
+          10
+        ],
+        "dep": "conj",
+        "mark": ""
+      },
+      {
+        "text": "bene",
+        "pos": "ADV",
+        "lemma": "bene",
+        "space": false,
+        "align": [
+          10
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          12
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "We're meeting up tomorrow?",
+    "en_tokens": [
+      "We",
+      "'",
+      "re",
+      "meeting",
+      "up",
+      "tomorrow",
+      "?"
+    ],
+    "en_space": [
+      false,
+      false,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Ci",
+        "pos": "PRON",
+        "lemma": "ci",
+        "space": true,
+        "align": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "dep": "expl",
+        "mark": "reflexive"
+      },
+      {
+        "text": "vediamo",
+        "pos": "VERB",
+        "lemma": "vedere",
+        "space": true,
+        "align": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "domani",
+        "pos": "ADV",
+        "lemma": "domani",
+        "space": false,
+        "align": [
+          5
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "?",
+        "pos": "PUNCT",
+        "lemma": "?",
+        "space": false,
+        "align": [
+          6
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "How do you say that in Italian?",
+    "en_tokens": [
+      "How",
+      "do",
+      "you",
+      "say",
+      "that",
+      "in",
+      "Italian",
+      "?"
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Come",
+        "pos": "ADV",
+        "lemma": "come",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "si",
+        "pos": "PRON",
+        "lemma": "si",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "expl:impers",
+        "mark": "reflexive"
+      },
+      {
+        "text": "dice",
+        "pos": "VERB",
+        "lemma": "dire",
+        "space": true,
+        "align": [
+          1,
+          3
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "questo",
+        "pos": "PRON",
+        "lemma": "questo",
+        "space": true,
+        "align": [
+          4
+        ],
+        "dep": "nsubj",
+        "mark": ""
+      },
+      {
+        "text": "in",
+        "pos": "ADP",
+        "lemma": "in",
+        "space": true,
+        "align": [
+          5
+        ],
+        "dep": "case",
+        "mark": ""
+      },
+      {
+        "text": "italiano",
+        "pos": "NOUN",
+        "lemma": "italiano",
+        "space": false,
+        "align": [
+          6
+        ],
+        "dep": "obl",
+        "mark": ""
+      },
+      {
+        "text": "?",
+        "pos": "PUNCT",
+        "lemma": "?",
+        "space": false,
+        "align": [
+          7
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "Is it far from here?",
+    "en_tokens": [
+      "Is",
+      "it",
+      "far",
+      "from",
+      "here",
+      "?"
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "È",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          0,
+          1
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "lontana",
+        "pos": "ADJ",
+        "lemma": "lontano",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "da",
+        "pos": "ADP",
+        "lemma": "da",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "case",
+        "mark": ""
+      },
+      {
+        "text": "qui",
+        "pos": "ADV",
+        "lemma": "qui",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "?",
+        "pos": "PUNCT",
+        "lemma": "?",
+        "space": false,
+        "align": [
+          5
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "These things aren't mine!",
+    "en_tokens": [
+      "These",
+      "things",
+      "aren",
+      "'",
+      "t",
+      "mine",
+      "!"
+    ],
+    "en_space": [
+      true,
+      true,
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Queste",
+        "pos": "PRON",
+        "lemma": "questo",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "nsubj",
+        "mark": ""
+      },
+      {
+        "text": "non",
+        "pos": "ADV",
+        "lemma": "non",
+        "space": true,
+        "align": [
+          2,
+          3,
+          4
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "sono",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          2,
+          3,
+          4
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "le",
+        "pos": "DET",
+        "lemma": "il",
+        "space": true,
+        "align": [],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "mie",
+        "pos": "DET",
+        "lemma": "mio",
+        "space": true,
+        "align": [
+          5
+        ],
+        "dep": "det:poss",
+        "mark": ""
+      },
+      {
+        "text": "cose",
+        "pos": "NOUN",
+        "lemma": "cosa",
+        "space": false,
+        "align": [
+          1
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "!",
+        "pos": "PUNCT",
+        "lemma": "!",
+        "space": false,
+        "align": [
+          6
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "Thanks, that's all.",
+    "en_tokens": [
+      "Thanks",
+      ",",
+      "that",
+      "'",
+      "s",
+      "all",
+      "."
+    ],
+    "en_space": [
+      false,
+      true,
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Grazie",
+        "pos": "INTJ",
+        "lemma": "grazie",
+        "space": false,
+        "align": [
+          0
+        ],
+        "dep": "discourse",
+        "mark": ""
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ",",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "punct",
+        "mark": ""
+      },
+      {
+        "text": "è",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "tutto",
+        "pos": "PRON",
+        "lemma": "tutto",
+        "space": false,
+        "align": [
+          2,
+          3,
+          4,
+          5
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          6
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "What time is it?",
+    "en_tokens": [
+      "What",
+      "time",
+      "is",
+      "it",
+      "?"
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Che",
+        "pos": "DET",
+        "lemma": "che",
+        "space": true,
+        "align": [
+          0,
+          1
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "ore",
+        "pos": "NOUN",
+        "lemma": "ora",
+        "space": true,
+        "align": [
+          0,
+          1
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "sono",
+        "pos": "VERB",
+        "lemma": "essere",
+        "space": false,
+        "align": [
+          2,
+          3
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "?",
+        "pos": "PUNCT",
+        "lemma": "?",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "What is your name?",
+    "en_tokens": [
+      "What",
+      "is",
+      "your",
+      "name",
+      "?"
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Come",
+        "pos": "ADV",
+        "lemma": "come",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "mark",
+        "mark": ""
+      },
+      {
+        "text": "ti",
+        "pos": "PRON",
+        "lemma": "ti",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "obj",
+        "mark": ""
+      },
+      {
+        "text": "chiami",
+        "pos": "VERB",
+        "lemma": "chiamare",
+        "space": false,
+        "align": [
+          1,
+          3
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "?",
+        "pos": "PUNCT",
+        "lemma": "?",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "Italy is a very beautiful country.",
+    "en_tokens": [
+      "Italy",
+      "is",
+      "a",
+      "very",
+      "beautiful",
+      "country",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "L'",
+        "pos": "DET",
+        "lemma": "il",
+        "space": false,
+        "align": [
+          0
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "Italia",
+        "pos": "PROPN",
+        "lemma": "Italia",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "nsubj",
+        "mark": ""
+      },
+      {
+        "text": "è",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "un",
+        "pos": "DET",
+        "lemma": "uno",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "paese",
+        "pos": "NOUN",
+        "lemma": "paese",
+        "space": true,
+        "align": [
+          5
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "molto",
+        "pos": "ADV",
+        "lemma": "molto",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "bello",
+        "pos": "ADJ",
+        "lemma": "bello",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "amod",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          6
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "It's not my fault!",
+    "en_tokens": [
+      "It",
+      "'",
+      "s",
+      "not",
+      "my",
+      "fault",
+      "!"
+    ],
+    "en_space": [
+      false,
+      false,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Non",
+        "pos": "ADV",
+        "lemma": "non",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "è",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          0,
+          1,
+          2
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "colpa",
+        "pos": "NOUN",
+        "lemma": "colpa",
+        "space": true,
+        "align": [
+          5
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "mia",
+        "pos": "DET",
+        "lemma": "mio",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "det:poss",
+        "mark": ""
+      },
+      {
+        "text": "!",
+        "pos": "PUNCT",
+        "lemma": "!",
+        "space": false,
+        "align": [
+          6
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "I'd like to stay for one night.",
+    "en_tokens": [
+      "I",
+      "'",
+      "d",
+      "like",
+      "to",
+      "stay",
+      "for",
+      "one",
+      "night",
+      "."
+    ],
+    "en_space": [
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Vorrei",
+        "pos": "AUX",
+        "lemma": "volere",
+        "space": true,
+        "align": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "dep": "aux",
+        "mark": ""
+      },
+      {
+        "text": "rimanere",
+        "pos": "VERB",
+        "lemma": "rimanere",
+        "space": true,
+        "align": [
+          4,
+          5
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "per",
+        "pos": "ADP",
+        "lemma": "per",
+        "space": true,
+        "align": [
+          6
+        ],
+        "dep": "case",
+        "mark": ""
+      },
+      {
+        "text": "una",
+        "pos": "DET",
+        "lemma": "uno",
+        "space": true,
+        "align": [
+          7
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "notte",
+        "pos": "NOUN",
+        "lemma": "notte",
+        "space": false,
+        "align": [
+          8
+        ],
+        "dep": "obl",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          9
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "Where are the showers?",
+    "en_tokens": [
+      "Where",
+      "are",
+      "the",
+      "showers",
+      "?"
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Dove",
+        "pos": "ADV",
+        "lemma": "dove",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "sono",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "le",
+        "pos": "DET",
+        "lemma": "il",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "docce",
+        "pos": "NOUN",
+        "lemma": "doccia",
+        "space": false,
+        "align": [
+          3
+        ],
+        "dep": "nsubj",
+        "mark": ""
+      },
+      {
+        "text": "?",
+        "pos": "PUNCT",
+        "lemma": "?",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "I have lost my wallet.",
+    "en_tokens": [
+      "I",
+      "have",
+      "lost",
+      "my",
+      "wallet",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Ho",
+        "pos": "AUX",
+        "lemma": "avere",
+        "space": true,
+        "align": [
+          0,
+          1
+        ],
+        "dep": "aux",
+        "mark": ""
+      },
+      {
+        "text": "perso",
+        "pos": "VERB",
+        "lemma": "perdere",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "il",
+        "pos": "DET",
+        "lemma": "il",
+        "space": true,
+        "align": [],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "mio",
+        "pos": "DET",
+        "lemma": "mio",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "det:poss",
+        "mark": ""
+      },
+      {
+        "text": "portafoglio",
+        "pos": "NOUN",
+        "lemma": "portafoglio",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "obj",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          5
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "I agree.",
+    "en_tokens": [
+      "I",
+      "agree",
+      "."
+    ],
+    "en_space": [
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Io",
+        "pos": "PRON",
+        "lemma": "io",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "nsubj",
+        "mark": ""
+      },
+      {
+        "text": "sono",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "d'",
+        "pos": "ADP",
+        "lemma": "di",
+        "space": false,
+        "align": [
+          1
+        ],
+        "dep": "case",
+        "mark": ""
+      },
+      {
+        "text": "accordo",
+        "pos": "NOUN",
+        "lemma": "accordo",
+        "space": false,
+        "align": [
+          1
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          2
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "Not wanting is the same as having.",
+    "en_tokens": [
+      "Not",
+      "wanting",
+      "is",
+      "the",
+      "same",
+      "as",
+      "having",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Non",
+        "pos": "ADV",
+        "lemma": "non",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "desiderare",
+        "pos": "VERB",
+        "lemma": "desiderare",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "csubj",
+        "mark": ""
+      },
+      {
+        "text": "è",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "lo",
+        "pos": "DET",
+        "lemma": "il",
+        "space": true,
+        "align": [
+          3,
+          4
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "stesso",
+        "pos": "PRON",
+        "lemma": "stesso",
+        "space": true,
+        "align": [
+          3,
+          4
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "che",
+        "pos": "SCONJ",
+        "lemma": "che",
+        "space": true,
+        "align": [
+          5
+        ],
+        "dep": "mark",
+        "mark": ""
+      },
+      {
+        "text": "avere",
+        "pos": "VERB",
+        "lemma": "avere",
+        "space": false,
+        "align": [
+          6
+        ],
+        "dep": "acl:relcl",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          7
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "The check, please.",
+    "en_tokens": [
+      "The",
+      "check",
+      ",",
+      "please",
+      "."
+    ],
+    "en_space": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Il",
+        "pos": "DET",
+        "lemma": "il",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "conto",
+        "pos": "NOUN",
+        "lemma": "conto",
+        "space": false,
+        "align": [
+          1
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ",",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "punct",
+        "mark": ""
+      },
+      {
+        "text": "per",
+        "pos": "ADP",
+        "lemma": "per",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "case",
+        "mark": ""
+      },
+      {
+        "text": "favore",
+        "pos": "NOUN",
+        "lemma": "favore",
+        "space": false,
+        "align": [
+          3
+        ],
+        "dep": "nmod",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "I have a headache.",
+    "en_tokens": [
+      "I",
+      "have",
+      "a",
+      "headache",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Mi",
+        "pos": "PRON",
+        "lemma": "mi",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "iobj",
+        "mark": ""
+      },
+      {
+        "text": "fa",
+        "pos": "VERB",
+        "lemma": "fare",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "male",
+        "pos": "ADV",
+        "lemma": "male",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "la",
+        "pos": "DET",
+        "lemma": "il",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "testa",
+        "pos": "NOUN",
+        "lemma": "testa",
+        "space": false,
+        "align": [
+          3
+        ],
+        "dep": "obj",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "Where can one make a phone call?",
+    "en_tokens": [
+      "Where",
+      "can",
+      "one",
+      "make",
+      "a",
+      "phone",
+      "call",
+      "?"
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Dove",
+        "pos": "ADV",
+        "lemma": "dove",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "si",
+        "pos": "PRON",
+        "lemma": "si",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "expl:impers",
+        "mark": "reflexive"
+      },
+      {
+        "text": "può",
+        "pos": "AUX",
+        "lemma": "potere",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "aux",
+        "mark": ""
+      },
+      {
+        "text": "telefonare",
+        "pos": "VERB",
+        "lemma": "telefonare",
+        "space": false,
+        "align": [
+          3,
+          4,
+          5,
+          6
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "?",
+        "pos": "PUNCT",
+        "lemma": "?",
+        "space": false,
+        "align": [
+          7
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "Tonight we're going to church.",
+    "en_tokens": [
+      "Tonight",
+      "we",
+      "'",
+      "re",
+      "going",
+      "to",
+      "church",
+      "."
+    ],
+    "en_space": [
+      true,
+      false,
+      false,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Stasera",
+        "pos": "ADV",
+        "lemma": "stasera",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "andiamo",
+        "pos": "VERB",
+        "lemma": "andare",
+        "space": true,
+        "align": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "in",
+        "pos": "ADP",
+        "lemma": "in",
+        "space": true,
+        "align": [
+          5
+        ],
+        "dep": "case",
+        "mark": ""
+      },
+      {
+        "text": "chiesa",
+        "pos": "NOUN",
+        "lemma": "chiesa",
+        "space": false,
+        "align": [
+          6
+        ],
+        "dep": "obl",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          7
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "I don't feel well.",
+    "en_tokens": [
+      "I",
+      "don",
+      "'",
+      "t",
+      "feel",
+      "well",
+      "."
+    ],
+    "en_space": [
+      true,
+      false,
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Non",
+        "pos": "ADV",
+        "lemma": "non",
+        "space": true,
+        "align": [
+          1,
+          2,
+          3
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "mi",
+        "pos": "PRON",
+        "lemma": "mi",
+        "space": true,
+        "align": [],
+        "dep": "expl",
+        "mark": "reflexive"
+      },
+      {
+        "text": "sento",
+        "pos": "VERB",
+        "lemma": "sentire",
+        "space": true,
+        "align": [
+          0,
+          4
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "bene",
+        "pos": "ADV",
+        "lemma": "bene",
+        "space": false,
+        "align": [
+          5
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          6
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "It's too expensive!",
+    "en_tokens": [
+      "It",
+      "'",
+      "s",
+      "too",
+      "expensive",
+      "!"
+    ],
+    "en_space": [
+      false,
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "È",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          0,
+          1,
+          2
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "troppo",
+        "pos": "ADV",
+        "lemma": "troppo",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "caro",
+        "pos": "ADJ",
+        "lemma": "caro",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "!",
+        "pos": "PUNCT",
+        "lemma": "!",
+        "space": false,
+        "align": [
+          5
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "I am married and have two children.",
+    "en_tokens": [
+      "I",
+      "am",
+      "married",
+      "and",
+      "have",
+      "two",
+      "children",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Sono",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          0,
+          1
+        ],
+        "dep": "aux",
+        "mark": ""
+      },
+      {
+        "text": "sposata",
+        "pos": "VERB",
+        "lemma": "sposare",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "e",
+        "pos": "CCONJ",
+        "lemma": "e",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "cc",
+        "mark": ""
+      },
+      {
+        "text": "ho",
+        "pos": "VERB",
+        "lemma": "avere",
+        "space": true,
+        "align": [
+          4
+        ],
+        "dep": "conj",
+        "mark": ""
+      },
+      {
+        "text": "due",
+        "pos": "NUM",
+        "lemma": "due",
+        "space": true,
+        "align": [
+          5
+        ],
+        "dep": "nummod",
+        "mark": ""
+      },
+      {
+        "text": "bambini",
+        "pos": "NOUN",
+        "lemma": "bambino",
+        "space": false,
+        "align": [
+          6
+        ],
+        "dep": "obj",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          7
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "I see it rarely.",
+    "en_tokens": [
+      "I",
+      "see",
+      "it",
+      "rarely",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Lo",
+        "pos": "PRON",
+        "lemma": "lo",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "obj",
+        "mark": ""
+      },
+      {
+        "text": "vedo",
+        "pos": "VERB",
+        "lemma": "vedere",
+        "space": true,
+        "align": [
+          0,
+          1
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "raramente",
+        "pos": "ADV",
+        "lemma": "raramente",
+        "space": false,
+        "align": [
+          3
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "I'd like to study in Paris.",
+    "en_tokens": [
+      "I",
+      "'",
+      "d",
+      "like",
+      "to",
+      "study",
+      "in",
+      "Paris",
+      "."
+    ],
+    "en_space": [
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Vorrei",
+        "pos": "AUX",
+        "lemma": "volere",
+        "space": true,
+        "align": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "dep": "aux",
+        "mark": ""
+      },
+      {
+        "text": "studiare",
+        "pos": "VERB",
+        "lemma": "studiare",
+        "space": true,
+        "align": [
+          4,
+          5
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "a",
+        "pos": "ADP",
+        "lemma": "a",
+        "space": true,
+        "align": [
+          6
+        ],
+        "dep": "case",
+        "mark": ""
+      },
+      {
+        "text": "Parigi",
+        "pos": "PROPN",
+        "lemma": "Parigi",
+        "space": false,
+        "align": [
+          7
+        ],
+        "dep": "obl",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          8
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "You don't know who I am.",
+    "en_tokens": [
+      "You",
+      "don",
+      "'",
+      "t",
+      "know",
+      "who",
+      "I",
+      "am",
+      "."
+    ],
+    "en_space": [
+      true,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Non",
+        "pos": "ADV",
+        "lemma": "non",
+        "space": true,
+        "align": [
+          1,
+          2,
+          3
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "sapete",
+        "pos": "VERB",
+        "lemma": "sapere",
+        "space": true,
+        "align": [
+          4
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "chi",
+        "pos": "PRON",
+        "lemma": "chi",
+        "space": true,
+        "align": [
+          5
+        ],
+        "dep": "ccomp",
+        "mark": ""
+      },
+      {
+        "text": "sono",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          6,
+          7
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "io",
+        "pos": "PRON",
+        "lemma": "io",
+        "space": false,
+        "align": [
+          6,
+          7
+        ],
+        "dep": "nsubj",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          8
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "Where there's a will, there's a way.",
+    "en_tokens": [
+      "Where",
+      "there",
+      "'",
+      "s",
+      "a",
+      "will",
+      ",",
+      "there",
+      "'",
+      "s",
+      "a",
+      "way",
+      "."
+    ],
+    "en_space": [
+      true,
+      false,
+      false,
+      true,
+      true,
+      false,
+      true,
+      false,
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Volere",
+        "pos": "VERB",
+        "lemma": "Volere",
+        "space": true,
+        "align": [
+          5
+        ],
+        "dep": "nsubj",
+        "mark": ""
+      },
+      {
+        "text": "è",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          2,
+          3,
+          8,
+          9
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "potere",
+        "pos": "NOUN",
+        "lemma": "potere",
+        "space": false,
+        "align": [
+          11
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          12
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "Who searches, finds.",
+    "en_tokens": [
+      "Who",
+      "searches",
+      ",",
+      "finds",
+      "."
+    ],
+    "en_space": [
+      true,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Chi",
+        "pos": "PRON",
+        "lemma": "chi",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "nsubj",
+        "mark": ""
+      },
+      {
+        "text": "cerca",
+        "pos": "VERB",
+        "lemma": "cercare",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "trova",
+        "pos": "VERB",
+        "lemma": "trovare",
+        "space": false,
+        "align": [
+          3
+        ],
+        "dep": "obj",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "Rome wasn't built in a day.",
+    "en_tokens": [
+      "Rome",
+      "wasn",
+      "'",
+      "t",
+      "built",
+      "in",
+      "a",
+      "day",
+      "."
+    ],
+    "en_space": [
+      true,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Roma",
+        "pos": "PROPN",
+        "lemma": "Roma",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "nsubj:pass",
+        "mark": ""
+      },
+      {
+        "text": "non",
+        "pos": "ADV",
+        "lemma": "non",
+        "space": true,
+        "align": [
+          1,
+          2,
+          3
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "fu",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "dep": "aux:pass",
+        "mark": ""
+      },
+      {
+        "text": "fatta",
+        "pos": "VERB",
+        "lemma": "fare",
+        "space": true,
+        "align": [
+          1,
+          2,
+          3,
+          4
+        ],
+        "dep": "ROOT",
+        "mark": "passive"
+      },
+      {
+        "text": "in",
+        "pos": "ADP",
+        "lemma": "in",
+        "space": true,
+        "align": [
+          5
+        ],
+        "dep": "case",
+        "mark": ""
+      },
+      {
+        "text": "un",
+        "pos": "DET",
+        "lemma": "uno",
+        "space": true,
+        "align": [
+          6
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "giorno",
+        "pos": "NOUN",
+        "lemma": "giorno",
+        "space": false,
+        "align": [
+          7
+        ],
+        "dep": "obl",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          8
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "That was the best day of my life.",
+    "en_tokens": [
+      "That",
+      "was",
+      "the",
+      "best",
+      "day",
+      "of",
+      "my",
+      "life",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "È",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "aux",
+        "mark": ""
+      },
+      {
+        "text": "stato",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "il",
+        "pos": "DET",
+        "lemma": "il",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "giorno",
+        "pos": "NOUN",
+        "lemma": "giorno",
+        "space": true,
+        "align": [
+          4
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "più",
+        "pos": "ADV",
+        "lemma": "più",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "bello",
+        "pos": "ADJ",
+        "lemma": "bello",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "amod",
+        "mark": ""
+      },
+      {
+        "text": "della",
+        "pos": "ADP",
+        "lemma": "di il",
+        "space": true,
+        "align": [
+          5
+        ],
+        "dep": "case",
+        "mark": ""
+      },
+      {
+        "text": "mia",
+        "pos": "DET",
+        "lemma": "mio",
+        "space": true,
+        "align": [
+          6
+        ],
+        "dep": "det:poss",
+        "mark": ""
+      },
+      {
+        "text": "vita",
+        "pos": "NOUN",
+        "lemma": "vita",
+        "space": false,
+        "align": [
+          7
+        ],
+        "dep": "obl",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          8
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "I made my decision.",
+    "en_tokens": [
+      "I",
+      "made",
+      "my",
+      "decision",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Ho",
+        "pos": "AUX",
+        "lemma": "avere",
+        "space": true,
+        "align": [
+          0,
+          1
+        ],
+        "dep": "aux",
+        "mark": ""
+      },
+      {
+        "text": "preso",
+        "pos": "VERB",
+        "lemma": "prendere",
+        "space": true,
+        "align": [
+          0,
+          1
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "la",
+        "pos": "DET",
+        "lemma": "il",
+        "space": true,
+        "align": [],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "mia",
+        "pos": "DET",
+        "lemma": "mio",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "det:poss",
+        "mark": ""
+      },
+      {
+        "text": "decisione",
+        "pos": "NOUN",
+        "lemma": "decisione",
+        "space": false,
+        "align": [
+          3
+        ],
+        "dep": "obj",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "I give you my word.",
+    "en_tokens": [
+      "I",
+      "give",
+      "you",
+      "my",
+      "word",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Ti",
+        "pos": "PRON",
+        "lemma": "ti",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "iobj",
+        "mark": ""
+      },
+      {
+        "text": "do",
+        "pos": "ADP",
+        "lemma": "do",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "la",
+        "pos": "DET",
+        "lemma": "il",
+        "space": true,
+        "align": [],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "mia",
+        "pos": "DET",
+        "lemma": "mio",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "det:poss",
+        "mark": ""
+      },
+      {
+        "text": "parola",
+        "pos": "NOUN",
+        "lemma": "parola",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "obj",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          5
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "You are the great love of my life.",
+    "en_tokens": [
+      "You",
+      "are",
+      "the",
+      "great",
+      "love",
+      "of",
+      "my",
+      "life",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Sei",
+        "pos": "AUX",
+        "lemma": "sei",
+        "space": true,
+        "align": [
+          0,
+          1
+        ],
+        "dep": "case",
+        "mark": ""
+      },
+      {
+        "text": "il",
+        "pos": "DET",
+        "lemma": "il",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "grande",
+        "pos": "ADJ",
+        "lemma": "grande",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "amod",
+        "mark": ""
+      },
+      {
+        "text": "amore",
+        "pos": "NOUN",
+        "lemma": "amore",
+        "space": true,
+        "align": [
+          4
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "della",
+        "pos": "ADP",
+        "lemma": "di il",
+        "space": true,
+        "align": [
+          5
+        ],
+        "dep": "case",
+        "mark": ""
+      },
+      {
+        "text": "mia",
+        "pos": "DET",
+        "lemma": "mio",
+        "space": true,
+        "align": [
+          6
+        ],
+        "dep": "det:poss",
+        "mark": ""
+      },
+      {
+        "text": "vita",
+        "pos": "NOUN",
+        "lemma": "vita",
+        "space": false,
+        "align": [
+          7
+        ],
+        "dep": "nmod",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          8
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "We have a Pope.",
+    "en_tokens": [
+      "We",
+      "have",
+      "a",
+      "Pope",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Abbiamo",
+        "pos": "VERB",
+        "lemma": "avere",
+        "space": true,
+        "align": [
+          0,
+          1
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "un",
+        "pos": "DET",
+        "lemma": "uno",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "Papa",
+        "pos": "PROPN",
+        "lemma": "Papa",
+        "space": false,
+        "align": [
+          3
+        ],
+        "dep": "obj",
+        "mark": ""
+      },
+      {
+        "text": "!",
+        "pos": "PUNCT",
+        "lemma": "!",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "Face life with a smile!",
+    "en_tokens": [
+      "Face",
+      "life",
+      "with",
+      "a",
+      "smile",
+      "!"
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Affronta",
+        "pos": "VERB",
+        "lemma": "affrontare",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "la",
+        "pos": "DET",
+        "lemma": "il",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "vita",
+        "pos": "NOUN",
+        "lemma": "vita",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "obj",
+        "mark": ""
+      },
+      {
+        "text": "sorridendo",
+        "pos": "VERB",
+        "lemma": "sorridere",
+        "space": false,
+        "align": [
+          2,
+          3,
+          4
+        ],
+        "dep": "advmod",
+        "mark": "gerund"
+      },
+      {
+        "text": "!",
+        "pos": "PUNCT",
+        "lemma": "!",
+        "space": false,
+        "align": [
+          5
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "You make me dream.",
+    "en_tokens": [
+      "You",
+      "make",
+      "me",
+      "dream",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Mi",
+        "pos": "PRON",
+        "lemma": "mi",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "iobj",
+        "mark": ""
+      },
+      {
+        "text": "fai",
+        "pos": "VERB",
+        "lemma": "fare",
+        "space": true,
+        "align": [
+          0,
+          1
+        ],
+        "dep": "aux",
+        "mark": ""
+      },
+      {
+        "text": "sognare",
+        "pos": "VERB",
+        "lemma": "sognare",
+        "space": false,
+        "align": [
+          3
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "I'm beside myself with joy.",
+    "en_tokens": [
+      "I",
+      "'",
+      "m",
+      "beside",
+      "myself",
+      "with",
+      "joy",
+      "."
+    ],
+    "en_space": [
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Non",
+        "pos": "ADV",
+        "lemma": "non",
+        "space": true,
+        "align": [],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "sto",
+        "pos": "VERB",
+        "lemma": "stare",
+        "space": true,
+        "align": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "più",
+        "pos": "ADV",
+        "lemma": "più",
+        "space": true,
+        "align": [],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "in",
+        "pos": "ADP",
+        "lemma": "in",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "case",
+        "mark": ""
+      },
+      {
+        "text": "me",
+        "pos": "PRON",
+        "lemma": "me",
+        "space": true,
+        "align": [
+          4
+        ],
+        "dep": "obl",
+        "mark": ""
+      },
+      {
+        "text": "dalla",
+        "pos": "ADP",
+        "lemma": "da il",
+        "space": true,
+        "align": [
+          5
+        ],
+        "dep": "case",
+        "mark": ""
+      },
+      {
+        "text": "gioia",
+        "pos": "NOUN",
+        "lemma": "gioia",
+        "space": false,
+        "align": [
+          6
+        ],
+        "dep": "obl",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          7
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "He's already a man.",
+    "en_tokens": [
+      "He",
+      "'",
+      "s",
+      "already",
+      "a",
+      "man",
+      "."
+    ],
+    "en_space": [
+      false,
+      false,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Ormai",
+        "pos": "ADV",
+        "lemma": "ormai",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "è",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          0,
+          1,
+          2
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "un",
+        "pos": "DET",
+        "lemma": "uno",
+        "space": true,
+        "align": [
+          4
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "uomo",
+        "pos": "NOUN",
+        "lemma": "uomo",
+        "space": false,
+        "align": [
+          5
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          6
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "The vacation is over now.",
+    "en_tokens": [
+      "The",
+      "vacation",
+      "is",
+      "over",
+      "now",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Le",
+        "pos": "DET",
+        "lemma": "il",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "vacanze",
+        "pos": "NOUN",
+        "lemma": "vacanza",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "nsubj",
+        "mark": ""
+      },
+      {
+        "text": "sono",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "aux",
+        "mark": ""
+      },
+      {
+        "text": "finite",
+        "pos": "VERB",
+        "lemma": "finire",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "ora",
+        "pos": "ADV",
+        "lemma": "ora",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          5
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "I'm afraid to fall.",
+    "en_tokens": [
+      "I",
+      "'",
+      "m",
+      "afraid",
+      "to",
+      "fall",
+      "."
+    ],
+    "en_space": [
+      false,
+      false,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Ho",
+        "pos": "VERB",
+        "lemma": "avere",
+        "space": true,
+        "align": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "paura",
+        "pos": "NOUN",
+        "lemma": "paura",
+        "space": true,
+        "align": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "dep": "obj",
+        "mark": ""
+      },
+      {
+        "text": "di",
+        "pos": "ADP",
+        "lemma": "di",
+        "space": true,
+        "align": [
+          4
+        ],
+        "dep": "mark",
+        "mark": ""
+      },
+      {
+        "text": "cadere",
+        "pos": "VERB",
+        "lemma": "cadere",
+        "space": false,
+        "align": [
+          5
+        ],
+        "dep": "acl",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          6
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "Evening dress is desired.",
+    "en_tokens": [
+      "Evening",
+      "dress",
+      "is",
+      "desired",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "È",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "di",
+        "pos": "ADP",
+        "lemma": "di",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "case",
+        "mark": ""
+      },
+      {
+        "text": "rigore",
+        "pos": "NOUN",
+        "lemma": "rigore",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "l'",
+        "pos": "DET",
+        "lemma": "il",
+        "space": false,
+        "align": [
+          1
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "abito",
+        "pos": "NOUN",
+        "lemma": "abito",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "nsubj",
+        "mark": ""
+      },
+      {
+        "text": "da",
+        "pos": "ADP",
+        "lemma": "da",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "case",
+        "mark": ""
+      },
+      {
+        "text": "sera",
+        "pos": "NOUN",
+        "lemma": "sera",
+        "space": false,
+        "align": [
+          0
+        ],
+        "dep": "nmod",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "That's the absolute truth.",
+    "en_tokens": [
+      "That",
+      "'",
+      "s",
+      "the",
+      "absolute",
+      "truth",
+      "."
+    ],
+    "en_space": [
+      false,
+      false,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "È",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          1,
+          2
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "la",
+        "pos": "DET",
+        "lemma": "il",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "pura",
+        "pos": "ADJ",
+        "lemma": "puro",
+        "space": true,
+        "align": [
+          4
+        ],
+        "dep": "amod",
+        "mark": ""
+      },
+      {
+        "text": "verità",
+        "pos": "NOUN",
+        "lemma": "verità",
+        "space": false,
+        "align": [
+          5
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          6
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "You did this intentionally!",
+    "en_tokens": [
+      "You",
+      "did",
+      "this",
+      "intentionally",
+      "!"
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "L'",
+        "pos": "PRON",
+        "lemma": "lo",
+        "space": false,
+        "align": [
+          2
+        ],
+        "dep": "obj",
+        "mark": ""
+      },
+      {
+        "text": "hai",
+        "pos": "AUX",
+        "lemma": "avere",
+        "space": true,
+        "align": [
+          0,
+          1
+        ],
+        "dep": "aux",
+        "mark": ""
+      },
+      {
+        "text": "fatto",
+        "pos": "VERB",
+        "lemma": "fare",
+        "space": true,
+        "align": [
+          0,
+          1
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "apposta",
+        "pos": "ADV",
+        "lemma": "apposta",
+        "space": false,
+        "align": [
+          3
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "!",
+        "pos": "PUNCT",
+        "lemma": "!",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "You didn't tell him anything?",
+    "en_tokens": [
+      "You",
+      "didn",
+      "'",
+      "t",
+      "tell",
+      "him",
+      "anything",
+      "?"
+    ],
+    "en_space": [
+      true,
+      false,
+      false,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Non",
+        "pos": "ADV",
+        "lemma": "non",
+        "space": true,
+        "align": [
+          1,
+          2,
+          3
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "gli",
+        "pos": "PRON",
+        "lemma": "lo",
+        "space": true,
+        "align": [
+          5
+        ],
+        "dep": "iobj",
+        "mark": ""
+      },
+      {
+        "text": "hai",
+        "pos": "AUX",
+        "lemma": "avere",
+        "space": true,
+        "align": [
+          1,
+          2,
+          3
+        ],
+        "dep": "aux",
+        "mark": ""
+      },
+      {
+        "text": "detto",
+        "pos": "VERB",
+        "lemma": "dire",
+        "space": true,
+        "align": [
+          4
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "nulla",
+        "pos": "PRON",
+        "lemma": "nulla",
+        "space": false,
+        "align": [
+          6
+        ],
+        "dep": "obj",
+        "mark": ""
+      },
+      {
+        "text": "?",
+        "pos": "PUNCT",
+        "lemma": "?",
+        "space": false,
+        "align": [
+          7
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "You made me lose my mind.",
+    "en_tokens": [
+      "You",
+      "made",
+      "me",
+      "lose",
+      "my",
+      "mind",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Mi",
+        "pos": "PRON",
+        "lemma": "mi",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "obj",
+        "mark": ""
+      },
+      {
+        "text": "hai",
+        "pos": "AUX",
+        "lemma": "avere",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "aux",
+        "mark": ""
+      },
+      {
+        "text": "fatto",
+        "pos": "VERB",
+        "lemma": "fare",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "perdere",
+        "pos": "VERB",
+        "lemma": "perdere",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "ccomp",
+        "mark": ""
+      },
+      {
+        "text": "la",
+        "pos": "DET",
+        "lemma": "il",
+        "space": true,
+        "align": [
+          4
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "testa",
+        "pos": "NOUN",
+        "lemma": "testa",
+        "space": false,
+        "align": [
+          5
+        ],
+        "dep": "obj",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          6
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "You're my type.",
+    "en_tokens": [
+      "You",
+      "'",
+      "re",
+      "my",
+      "type",
+      "."
+    ],
+    "en_space": [
+      false,
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Sei",
+        "pos": "AUX",
+        "lemma": "sei",
+        "space": true,
+        "align": [
+          0,
+          1,
+          2
+        ],
+        "dep": "case",
+        "mark": ""
+      },
+      {
+        "text": "il",
+        "pos": "DET",
+        "lemma": "il",
+        "space": true,
+        "align": [],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "mio",
+        "pos": "DET",
+        "lemma": "mio",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "det:poss",
+        "mark": ""
+      },
+      {
+        "text": "tipo",
+        "pos": "NOUN",
+        "lemma": "tipo",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          5
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "I accept, but only under one condition.",
+    "en_tokens": [
+      "I",
+      "accept",
+      ",",
+      "but",
+      "only",
+      "under",
+      "one",
+      "condition",
+      "."
+    ],
+    "en_space": [
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Lo",
+        "pos": "PRON",
+        "lemma": "lo",
+        "space": true,
+        "align": [
+          0,
+          1
+        ],
+        "dep": "obj",
+        "mark": ""
+      },
+      {
+        "text": "accetto",
+        "pos": "VERB",
+        "lemma": "accettare",
+        "space": false,
+        "align": [
+          0,
+          1
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ",",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "punct",
+        "mark": ""
+      },
+      {
+        "text": "ma",
+        "pos": "CCONJ",
+        "lemma": "ma",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "cc",
+        "mark": ""
+      },
+      {
+        "text": "c'",
+        "pos": "PRON",
+        "lemma": "ci",
+        "space": false,
+        "align": [],
+        "dep": "expl",
+        "mark": "reflexive"
+      },
+      {
+        "text": "è",
+        "pos": "VERB",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "dep": "conj",
+        "mark": ""
+      },
+      {
+        "text": "un",
+        "pos": "DET",
+        "lemma": "uno",
+        "space": true,
+        "align": [
+          6
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "se",
+        "pos": "SCONJ",
+        "lemma": "se",
+        "space": false,
+        "align": [
+          4,
+          5,
+          6,
+          7
+        ],
+        "dep": "nsubj",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          8
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "Life is beautiful.",
+    "en_tokens": [
+      "Life",
+      "is",
+      "beautiful",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "La",
+        "pos": "DET",
+        "lemma": "il",
+        "space": true,
+        "align": [],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "vita",
+        "pos": "NOUN",
+        "lemma": "vita",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "nsubj",
+        "mark": ""
+      },
+      {
+        "text": "è",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "bella",
+        "pos": "ADJ",
+        "lemma": "bello",
+        "space": false,
+        "align": [
+          2
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "!",
+        "pos": "PUNCT",
+        "lemma": "!",
+        "space": false,
+        "align": [
+          3
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "We won the battle.",
+    "en_tokens": [
+      "We",
+      "won",
+      "the",
+      "battle",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Abbiamo",
+        "pos": "AUX",
+        "lemma": "avere",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "aux",
+        "mark": ""
+      },
+      {
+        "text": "vinto",
+        "pos": "VERB",
+        "lemma": "vincere",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "la",
+        "pos": "DET",
+        "lemma": "il",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "battaglia",
+        "pos": "NOUN",
+        "lemma": "battaglia",
+        "space": false,
+        "align": [
+          3
+        ],
+        "dep": "obj",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "I started learning Chinese last week.",
+    "en_tokens": [
+      "I",
+      "started",
+      "learning",
+      "Chinese",
+      "last",
+      "week",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Ho",
+        "pos": "AUX",
+        "lemma": "avere",
+        "space": true,
+        "align": [
+          0,
+          1
+        ],
+        "dep": "aux",
+        "mark": ""
+      },
+      {
+        "text": "cominciato",
+        "pos": "VERB",
+        "lemma": "cominciare",
+        "space": true,
+        "align": [
+          0,
+          1
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "a",
+        "pos": "ADP",
+        "lemma": "a",
+        "space": true,
+        "align": [],
+        "dep": "mark",
+        "mark": ""
+      },
+      {
+        "text": "studiare",
+        "pos": "VERB",
+        "lemma": "studiare",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "xcomp",
+        "mark": ""
+      },
+      {
+        "text": "cinese",
+        "pos": "ADJ",
+        "lemma": "cinese",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "xcomp",
+        "mark": ""
+      },
+      {
+        "text": "la",
+        "pos": "DET",
+        "lemma": "il",
+        "space": true,
+        "align": [
+          4,
+          5
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "settimana",
+        "pos": "NOUN",
+        "lemma": "settimana",
+        "space": true,
+        "align": [
+          4,
+          5
+        ],
+        "dep": "obj",
+        "mark": ""
+      },
+      {
+        "text": "scorsa",
+        "pos": "ADJ",
+        "lemma": "scorso",
+        "space": false,
+        "align": [
+          4,
+          5
+        ],
+        "dep": "amod",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          6
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "Aaah!! My computer is broken!",
+    "en_tokens": [
+      "Aaah",
+      "!",
+      "!",
+      "My",
+      "computer",
+      "is",
+      "broken",
+      "!"
+    ],
+    "en_space": [
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Aaah",
+        "pos": "INTJ",
+        "lemma": "Aaah",
+        "space": false,
+        "align": [
+          0
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "!",
+        "pos": "X",
+        "lemma": "!",
+        "space": false,
+        "align": [
+          1
+        ],
+        "dep": "punct",
+        "mark": ""
+      },
+      {
+        "text": "!",
+        "pos": "PUNCT",
+        "lemma": "!",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "punct",
+        "mark": ""
+      },
+      {
+        "text": "Il",
+        "pos": "DET",
+        "lemma": "il",
+        "space": true,
+        "align": [],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "mio",
+        "pos": "DET",
+        "lemma": "mio",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "det:poss",
+        "mark": ""
+      },
+      {
+        "text": "computer",
+        "pos": "NOUN",
+        "lemma": "computer",
+        "space": true,
+        "align": [
+          4
+        ],
+        "dep": "nsubj",
+        "mark": ""
+      },
+      {
+        "text": "è",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          5,
+          6
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "rotto",
+        "pos": "VERB",
+        "lemma": "rompere",
+        "space": false,
+        "align": [
+          5,
+          6
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "!",
+        "pos": "PUNCT",
+        "lemma": "!",
+        "space": false,
+        "align": [
+          7
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "I like my job very much.",
+    "en_tokens": [
+      "I",
+      "like",
+      "my",
+      "job",
+      "very",
+      "much",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Mi",
+        "pos": "PRON",
+        "lemma": "mi",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "iobj",
+        "mark": ""
+      },
+      {
+        "text": "piace",
+        "pos": "VERB",
+        "lemma": "piacere",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "molto",
+        "pos": "ADV",
+        "lemma": "molto",
+        "space": true,
+        "align": [
+          4,
+          5
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "il",
+        "pos": "DET",
+        "lemma": "il",
+        "space": true,
+        "align": [],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "mio",
+        "pos": "DET",
+        "lemma": "mio",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "det:poss",
+        "mark": ""
+      },
+      {
+        "text": "lavoro",
+        "pos": "NOUN",
+        "lemma": "lavoro",
+        "space": false,
+        "align": [
+          3
+        ],
+        "dep": "obj",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          6
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "I dreamt about you.",
+    "en_tokens": [
+      "I",
+      "dreamt",
+      "about",
+      "you",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Ti",
+        "pos": "PRON",
+        "lemma": "ti",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "expl",
+        "mark": "reflexive"
+      },
+      {
+        "text": "ho",
+        "pos": "AUX",
+        "lemma": "avere",
+        "space": true,
+        "align": [
+          0,
+          1,
+          2
+        ],
+        "dep": "aux",
+        "mark": ""
+      },
+      {
+        "text": "sognato",
+        "pos": "VERB",
+        "lemma": "sognare",
+        "space": false,
+        "align": [
+          0,
+          1,
+          2
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "I don't like school.",
+    "en_tokens": [
+      "I",
+      "don",
+      "'",
+      "t",
+      "like",
+      "school",
+      "."
+    ],
+    "en_space": [
+      true,
+      false,
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Non",
+        "pos": "ADV",
+        "lemma": "non",
+        "space": true,
+        "align": [
+          1,
+          2,
+          3
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "mi",
+        "pos": "PRON",
+        "lemma": "mi",
+        "space": true,
+        "align": [],
+        "dep": "iobj",
+        "mark": ""
+      },
+      {
+        "text": "piace",
+        "pos": "VERB",
+        "lemma": "piacere",
+        "space": true,
+        "align": [
+          4
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "la",
+        "pos": "DET",
+        "lemma": "il",
+        "space": true,
+        "align": [],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "scuola",
+        "pos": "NOUN",
+        "lemma": "scuola",
+        "space": false,
+        "align": [
+          5
+        ],
+        "dep": "nsubj",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          6
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "He disappeared without a trace.",
+    "en_tokens": [
+      "He",
+      "disappeared",
+      "without",
+      "a",
+      "trace",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "È",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          0,
+          1
+        ],
+        "dep": "aux",
+        "mark": ""
+      },
+      {
+        "text": "scomparso",
+        "pos": "VERB",
+        "lemma": "scomparire",
+        "space": true,
+        "align": [
+          0,
+          1
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "senza",
+        "pos": "ADP",
+        "lemma": "senza",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "mark",
+        "mark": ""
+      },
+      {
+        "text": "lasciare",
+        "pos": "VERB",
+        "lemma": "lasciare",
+        "space": true,
+        "align": [
+          3,
+          4
+        ],
+        "dep": "xcomp",
+        "mark": ""
+      },
+      {
+        "text": "tracce",
+        "pos": "NOUN",
+        "lemma": "traccia",
+        "space": false,
+        "align": [
+          3,
+          4
+        ],
+        "dep": "obj",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          5
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "The essence of mathematics is liberty.",
+    "en_tokens": [
+      "The",
+      "essence",
+      "of",
+      "mathematics",
+      "is",
+      "liberty",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "L'",
+        "pos": "DET",
+        "lemma": "il",
+        "space": false,
+        "align": [
+          0
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "essenza",
+        "pos": "NOUN",
+        "lemma": "essenza",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "nsubj",
+        "mark": ""
+      },
+      {
+        "text": "della",
+        "pos": "ADP",
+        "lemma": "di il",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "case",
+        "mark": ""
+      },
+      {
+        "text": "matematica",
+        "pos": "NOUN",
+        "lemma": "matematica",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "nmod",
+        "mark": ""
+      },
+      {
+        "text": "è",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          4
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "la",
+        "pos": "DET",
+        "lemma": "il",
+        "space": true,
+        "align": [],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "libertà",
+        "pos": "NOUN",
+        "lemma": "libertà",
+        "space": false,
+        "align": [
+          5
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          6
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "The essence of liberty is mathematics.",
+    "en_tokens": [
+      "The",
+      "essence",
+      "of",
+      "liberty",
+      "is",
+      "mathematics",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "L'",
+        "pos": "DET",
+        "lemma": "il",
+        "space": false,
+        "align": [
+          0
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "essenza",
+        "pos": "NOUN",
+        "lemma": "essenza",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "nsubj",
+        "mark": ""
+      },
+      {
+        "text": "della",
+        "pos": "ADP",
+        "lemma": "di il",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "case",
+        "mark": ""
+      },
+      {
+        "text": "libertà",
+        "pos": "NOUN",
+        "lemma": "libertà",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "nmod",
+        "mark": ""
+      },
+      {
+        "text": "è",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          4
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "la",
+        "pos": "DET",
+        "lemma": "il",
+        "space": true,
+        "align": [],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "matematica",
+        "pos": "NOUN",
+        "lemma": "matematica",
+        "space": false,
+        "align": [
+          5
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          6
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "At this hour, there is incredible traffic.",
+    "en_tokens": [
+      "At",
+      "this",
+      "hour",
+      ",",
+      "there",
+      "is",
+      "incredible",
+      "traffic",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "A",
+        "pos": "ADP",
+        "lemma": "a",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "case",
+        "mark": ""
+      },
+      {
+        "text": "quest'",
+        "pos": "DET",
+        "lemma": "questo",
+        "space": false,
+        "align": [
+          1
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "ora",
+        "pos": "NOUN",
+        "lemma": "ora",
+        "space": false,
+        "align": [
+          2
+        ],
+        "dep": "obl",
+        "mark": ""
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ",",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "punct",
+        "mark": ""
+      },
+      {
+        "text": "c'",
+        "pos": "PRON",
+        "lemma": "ci",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "expl",
+        "mark": "reflexive"
+      },
+      {
+        "text": "è",
+        "pos": "VERB",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          5
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "un",
+        "pos": "DET",
+        "lemma": "uno",
+        "space": true,
+        "align": [],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "traffico",
+        "pos": "NOUN",
+        "lemma": "traffico",
+        "space": true,
+        "align": [
+          7
+        ],
+        "dep": "nsubj",
+        "mark": ""
+      },
+      {
+        "text": "incredibile",
+        "pos": "ADJ",
+        "lemma": "incredibile",
+        "space": false,
+        "align": [
+          6
+        ],
+        "dep": "amod",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          8
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "The record was sent to the ministry.",
+    "en_tokens": [
+      "The",
+      "record",
+      "was",
+      "sent",
+      "to",
+      "the",
+      "ministry",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Il",
+        "pos": "DET",
+        "lemma": "il",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "dossier",
+        "pos": "NOUN",
+        "lemma": "dossier",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "nsubj:pass",
+        "mark": ""
+      },
+      {
+        "text": "è",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "aux",
+        "mark": ""
+      },
+      {
+        "text": "stato",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "aux:pass",
+        "mark": ""
+      },
+      {
+        "text": "inviato",
+        "pos": "VERB",
+        "lemma": "inviare",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "ROOT",
+        "mark": "passive"
+      },
+      {
+        "text": "al",
+        "pos": "ADP",
+        "lemma": "a il",
+        "space": true,
+        "align": [
+          4,
+          5
+        ],
+        "dep": "case",
+        "mark": ""
+      },
+      {
+        "text": "Ministero",
+        "pos": "NOUN",
+        "lemma": "Ministero",
+        "space": false,
+        "align": [
+          6
+        ],
+        "dep": "obl",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          7
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "They are waiting for you in front of the door.",
+    "en_tokens": [
+      "They",
+      "are",
+      "waiting",
+      "for",
+      "you",
+      "in",
+      "front",
+      "of",
+      "the",
+      "door",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Ti",
+        "pos": "PRON",
+        "lemma": "ti",
+        "space": true,
+        "align": [
+          4
+        ],
+        "dep": "obj",
+        "mark": ""
+      },
+      {
+        "text": "aspettano",
+        "pos": "VERB",
+        "lemma": "aspettare",
+        "space": true,
+        "align": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "davanti",
+        "pos": "ADV",
+        "lemma": "davanti",
+        "space": true,
+        "align": [
+          5,
+          6,
+          7
+        ],
+        "dep": "case",
+        "mark": ""
+      },
+      {
+        "text": "alla",
+        "pos": "DET",
+        "lemma": "a il",
+        "space": true,
+        "align": [
+          8
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "porta",
+        "pos": "NOUN",
+        "lemma": "porta",
+        "space": false,
+        "align": [
+          9
+        ],
+        "dep": "obl",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          10
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "Whose is it?",
+    "en_tokens": [
+      "Whose",
+      "is",
+      "it",
+      "?"
+    ],
+    "en_space": [
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Di",
+        "pos": "ADP",
+        "lemma": "di",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "case",
+        "mark": ""
+      },
+      {
+        "text": "chi",
+        "pos": "PRON",
+        "lemma": "chi",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "obl",
+        "mark": ""
+      },
+      {
+        "text": "è",
+        "pos": "VERB",
+        "lemma": "essere",
+        "space": false,
+        "align": [
+          1
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "?",
+        "pos": "PUNCT",
+        "lemma": "?",
+        "space": false,
+        "align": [
+          3
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "It is not his business.",
+    "en_tokens": [
+      "It",
+      "is",
+      "not",
+      "his",
+      "business",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Non",
+        "pos": "ADV",
+        "lemma": "non",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "è",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "affare",
+        "pos": "NOUN",
+        "lemma": "affare",
+        "space": true,
+        "align": [
+          4
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "suo",
+        "pos": "DET",
+        "lemma": "suo",
+        "space": false,
+        "align": [
+          3
+        ],
+        "dep": "det:poss",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          5
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "She is out of danger.",
+    "en_tokens": [
+      "She",
+      "is",
+      "out",
+      "of",
+      "danger",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "È",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "fuori",
+        "pos": "ADP",
+        "lemma": "fuori",
+        "space": true,
+        "align": [
+          2,
+          3
+        ],
+        "dep": "amod",
+        "mark": ""
+      },
+      {
+        "text": "pericolo",
+        "pos": "NOUN",
+        "lemma": "pericolo",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          5
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "He laughs best who laughs last.",
+    "en_tokens": [
+      "He",
+      "laughs",
+      "best",
+      "who",
+      "laughs",
+      "last",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Ride",
+        "pos": "NOUN",
+        "lemma": "Ride",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "bene",
+        "pos": "ADV",
+        "lemma": "bene",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "chi",
+        "pos": "PRON",
+        "lemma": "chi",
+        "space": true,
+        "align": [
+          3,
+          0
+        ],
+        "dep": "nsubj",
+        "mark": ""
+      },
+      {
+        "text": "ride",
+        "pos": "VERB",
+        "lemma": "ridere",
+        "space": true,
+        "align": [
+          4
+        ],
+        "dep": "acl:relcl",
+        "mark": ""
+      },
+      {
+        "text": "ultimo",
+        "pos": "ADJ",
+        "lemma": "ultimo",
+        "space": false,
+        "align": [
+          5
+        ],
+        "dep": "xcomp",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          6
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "The sooner, the better.",
+    "en_tokens": [
+      "The",
+      "sooner",
+      ",",
+      "the",
+      "better",
+      "."
+    ],
+    "en_space": [
+      true,
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Quanto",
+        "pos": "ADV",
+        "lemma": "quanto",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "prima",
+        "pos": "ADV",
+        "lemma": "prima",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "tanto",
+        "pos": "ADV",
+        "lemma": "tanto",
+        "space": true,
+        "align": [
+          4
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "meglio",
+        "pos": "ADV",
+        "lemma": "meglio",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          5
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "It isn't totally exact.",
+    "en_tokens": [
+      "It",
+      "isn",
+      "'",
+      "t",
+      "totally",
+      "exact",
+      "."
+    ],
+    "en_space": [
+      true,
+      false,
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Non",
+        "pos": "ADV",
+        "lemma": "non",
+        "space": true,
+        "align": [
+          1,
+          2,
+          3
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "è",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          1,
+          2,
+          3
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "del",
+        "pos": "ADP",
+        "lemma": "di il",
+        "space": true,
+        "align": [
+          4
+        ],
+        "dep": "case",
+        "mark": ""
+      },
+      {
+        "text": "tutto",
+        "pos": "PRON",
+        "lemma": "tutto",
+        "space": true,
+        "align": [
+          4
+        ],
+        "dep": "obl",
+        "mark": ""
+      },
+      {
+        "text": "esatto",
+        "pos": "ADJ",
+        "lemma": "esatto",
+        "space": false,
+        "align": [
+          5
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          6
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "He doesn't look his age.",
+    "en_tokens": [
+      "He",
+      "doesn",
+      "'",
+      "t",
+      "look",
+      "his",
+      "age",
+      "."
+    ],
+    "en_space": [
+      true,
+      false,
+      false,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Non",
+        "pos": "ADV",
+        "lemma": "non",
+        "space": true,
+        "align": [
+          1,
+          2,
+          3
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "dimostra",
+        "pos": "VERB",
+        "lemma": "dimostrare",
+        "space": true,
+        "align": [
+          4
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "la",
+        "pos": "DET",
+        "lemma": "il",
+        "space": true,
+        "align": [],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "sua",
+        "pos": "DET",
+        "lemma": "suo",
+        "space": true,
+        "align": [
+          5
+        ],
+        "dep": "det:poss",
+        "mark": ""
+      },
+      {
+        "text": "età",
+        "pos": "NOUN",
+        "lemma": "età",
+        "space": false,
+        "align": [
+          6
+        ],
+        "dep": "nsubj",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          7
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "I like trips.",
+    "en_tokens": [
+      "I",
+      "like",
+      "trips",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Mi",
+        "pos": "PRON",
+        "lemma": "mi",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "iobj",
+        "mark": ""
+      },
+      {
+        "text": "piacciono",
+        "pos": "VERB",
+        "lemma": "piacere",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "i",
+        "pos": "DET",
+        "lemma": "il",
+        "space": true,
+        "align": [],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "viaggi",
+        "pos": "NOUN",
+        "lemma": "viaggio",
+        "space": false,
+        "align": [
+          2
+        ],
+        "dep": "nsubj",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          3
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "I really wasn't expecting that from you.",
+    "en_tokens": [
+      "I",
+      "really",
+      "wasn",
+      "'",
+      "t",
+      "expecting",
+      "that",
+      "from",
+      "you",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      false,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Da",
+        "pos": "ADP",
+        "lemma": "da",
+        "space": true,
+        "align": [
+          7
+        ],
+        "dep": "case",
+        "mark": ""
+      },
+      {
+        "text": "te",
+        "pos": "PRON",
+        "lemma": "te",
+        "space": true,
+        "align": [
+          8
+        ],
+        "dep": "obl",
+        "mark": ""
+      },
+      {
+        "text": "proprio",
+        "pos": "ADV",
+        "lemma": "proprio",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "non",
+        "pos": "ADV",
+        "lemma": "non",
+        "space": true,
+        "align": [
+          2,
+          3,
+          4
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "me",
+        "pos": "PRON",
+        "lemma": "me",
+        "space": true,
+        "align": [
+          6
+        ],
+        "dep": "expl",
+        "mark": "reflexive"
+      },
+      {
+        "text": "l'",
+        "pos": "PRON",
+        "lemma": "lo",
+        "space": false,
+        "align": [
+          6
+        ],
+        "dep": "expl",
+        "mark": "reflexive"
+      },
+      {
+        "text": "aspettavo",
+        "pos": "VERB",
+        "lemma": "aspettare",
+        "space": false,
+        "align": [
+          0,
+          2,
+          3,
+          4,
+          5
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          9
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "I don't know him.",
+    "en_tokens": [
+      "I",
+      "don",
+      "'",
+      "t",
+      "know",
+      "him",
+      "."
+    ],
+    "en_space": [
+      true,
+      false,
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Non",
+        "pos": "ADV",
+        "lemma": "non",
+        "space": true,
+        "align": [
+          1,
+          2,
+          3
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "lo",
+        "pos": "PRON",
+        "lemma": "lo",
+        "space": true,
+        "align": [
+          5
+        ],
+        "dep": "obj",
+        "mark": ""
+      },
+      {
+        "text": "conosco",
+        "pos": "VERB",
+        "lemma": "conoscere",
+        "space": false,
+        "align": [
+          0,
+          4
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          6
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "I liked this film.",
+    "en_tokens": [
+      "I",
+      "liked",
+      "this",
+      "film",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Questo",
+        "pos": "DET",
+        "lemma": "questo",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "film",
+        "pos": "NOUN",
+        "lemma": "film",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "nsubj",
+        "mark": ""
+      },
+      {
+        "text": "mi",
+        "pos": "PRON",
+        "lemma": "mi",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "iobj",
+        "mark": ""
+      },
+      {
+        "text": "è",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "aux",
+        "mark": ""
+      },
+      {
+        "text": "piaciuto",
+        "pos": "VERB",
+        "lemma": "piacere",
+        "space": false,
+        "align": [
+          1
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "I don't care.",
+    "en_tokens": [
+      "I",
+      "don",
+      "'",
+      "t",
+      "care",
+      "."
+    ],
+    "en_space": [
+      true,
+      false,
+      false,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Non",
+        "pos": "ADV",
+        "lemma": "non",
+        "space": true,
+        "align": [
+          1,
+          2,
+          3
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "mi",
+        "pos": "PRON",
+        "lemma": "mi",
+        "space": true,
+        "align": [],
+        "dep": "iobj",
+        "mark": ""
+      },
+      {
+        "text": "importa",
+        "pos": "VERB",
+        "lemma": "importare",
+        "space": false,
+        "align": [
+          0,
+          1,
+          2,
+          3,
+          4
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          5
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "I go shopping every morning.",
+    "en_tokens": [
+      "I",
+      "go",
+      "shopping",
+      "every",
+      "morning",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Vado",
+        "pos": "VERB",
+        "lemma": "Vado",
+        "space": true,
+        "align": [
+          0,
+          1
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "ogni",
+        "pos": "DET",
+        "lemma": "ogni",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "mattina",
+        "pos": "NOUN",
+        "lemma": "mattina",
+        "space": true,
+        "align": [
+          4
+        ],
+        "dep": "obl",
+        "mark": ""
+      },
+      {
+        "text": "a",
+        "pos": "ADP",
+        "lemma": "a",
+        "space": true,
+        "align": [],
+        "dep": "mark",
+        "mark": ""
+      },
+      {
+        "text": "fare",
+        "pos": "VERB",
+        "lemma": "fare",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "xcomp",
+        "mark": ""
+      },
+      {
+        "text": "la",
+        "pos": "DET",
+        "lemma": "il",
+        "space": true,
+        "align": [],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "spesa",
+        "pos": "NOUN",
+        "lemma": "spesa",
+        "space": false,
+        "align": [
+          2
+        ],
+        "dep": "obj",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          5
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "Speech is silver, but silence is golden.",
+    "en_tokens": [
+      "Speech",
+      "is",
+      "silver",
+      ",",
+      "but",
+      "silence",
+      "is",
+      "golden",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "La",
+        "pos": "DET",
+        "lemma": "il",
+        "space": true,
+        "align": [],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "parola",
+        "pos": "NOUN",
+        "lemma": "parola",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "nsubj",
+        "mark": ""
+      },
+      {
+        "text": "è",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "d'",
+        "pos": "ADP",
+        "lemma": "di",
+        "space": false,
+        "align": [],
+        "dep": "case",
+        "mark": ""
+      },
+      {
+        "text": "argento",
+        "pos": "NOUN",
+        "lemma": "argento",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "ma",
+        "pos": "CCONJ",
+        "lemma": "ma",
+        "space": true,
+        "align": [
+          4
+        ],
+        "dep": "cc",
+        "mark": ""
+      },
+      {
+        "text": "il",
+        "pos": "DET",
+        "lemma": "il",
+        "space": true,
+        "align": [],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "silenzio",
+        "pos": "NOUN",
+        "lemma": "silenzio",
+        "space": true,
+        "align": [
+          5
+        ],
+        "dep": "nsubj",
+        "mark": ""
+      },
+      {
+        "text": "è",
+        "pos": "AUX",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          6
+        ],
+        "dep": "cop",
+        "mark": ""
+      },
+      {
+        "text": "d'",
+        "pos": "ADP",
+        "lemma": "di",
+        "space": false,
+        "align": [],
+        "dep": "case",
+        "mark": ""
+      },
+      {
+        "text": "oro",
+        "pos": "NOUN",
+        "lemma": "oro",
+        "space": false,
+        "align": [
+          7
+        ],
+        "dep": "conj",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          3,
+          8
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "I don't like these remarks.",
+    "en_tokens": [
+      "I",
+      "don",
+      "'",
+      "t",
+      "like",
+      "these",
+      "remarks",
+      "."
+    ],
+    "en_space": [
+      true,
+      false,
+      false,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Questi",
+        "pos": "DET",
+        "lemma": "questo",
+        "space": true,
+        "align": [
+          5
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "discorsi",
+        "pos": "NOUN",
+        "lemma": "discorso",
+        "space": true,
+        "align": [
+          6
+        ],
+        "dep": "nsubj",
+        "mark": ""
+      },
+      {
+        "text": "non",
+        "pos": "ADV",
+        "lemma": "non",
+        "space": true,
+        "align": [
+          1,
+          2,
+          3
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "mi",
+        "pos": "PRON",
+        "lemma": "mi",
+        "space": true,
+        "align": [],
+        "dep": "iobj",
+        "mark": ""
+      },
+      {
+        "text": "piacciono",
+        "pos": "VERB",
+        "lemma": "piacere",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          7
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "This does not concern you at all.",
+    "en_tokens": [
+      "This",
+      "does",
+      "not",
+      "concern",
+      "you",
+      "at",
+      "all",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Lei",
+        "pos": "PRON",
+        "lemma": "lei",
+        "space": true,
+        "align": [
+          4
+        ],
+        "dep": "nsubj",
+        "mark": ""
+      },
+      {
+        "text": "non",
+        "pos": "ADV",
+        "lemma": "non",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "c'",
+        "pos": "PRON",
+        "lemma": "ci",
+        "space": false,
+        "align": [
+          0,
+          1,
+          3
+        ],
+        "dep": "expl",
+        "mark": "reflexive"
+      },
+      {
+        "text": "entra",
+        "pos": "VERB",
+        "lemma": "entrare",
+        "space": true,
+        "align": [
+          0,
+          1,
+          3
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "affatto",
+        "pos": "ADV",
+        "lemma": "affatto",
+        "space": false,
+        "align": [
+          5,
+          6
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          7
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "Why do you want to leave today?",
+    "en_tokens": [
+      "Why",
+      "do",
+      "you",
+      "want",
+      "to",
+      "leave",
+      "today",
+      "?"
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Perché",
+        "pos": "SCONJ",
+        "lemma": "perché",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "mark",
+        "mark": ""
+      },
+      {
+        "text": "volete",
+        "pos": "AUX",
+        "lemma": "volere",
+        "space": true,
+        "align": [
+          1,
+          2,
+          3
+        ],
+        "dep": "aux",
+        "mark": ""
+      },
+      {
+        "text": "partire",
+        "pos": "VERB",
+        "lemma": "partire",
+        "space": true,
+        "align": [
+          4,
+          5
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "oggi",
+        "pos": "ADV",
+        "lemma": "oggi",
+        "space": false,
+        "align": [
+          6
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "?",
+        "pos": "PUNCT",
+        "lemma": "?",
+        "space": false,
+        "align": [
+          7
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "Better late than never.",
+    "en_tokens": [
+      "Better",
+      "late",
+      "than",
+      "never",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Meglio",
+        "pos": "ADV",
+        "lemma": "meglio",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "tardi",
+        "pos": "ADV",
+        "lemma": "tardi",
+        "space": true,
+        "align": [
+          1
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "che",
+        "pos": "SCONJ",
+        "lemma": "che",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "case",
+        "mark": ""
+      },
+      {
+        "text": "mai",
+        "pos": "ADV",
+        "lemma": "mai",
+        "space": false,
+        "align": [
+          3
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "Like father, like son.",
+    "en_tokens": [
+      "Like",
+      "father",
+      ",",
+      "like",
+      "son",
+      "."
+    ],
+    "en_space": [
+      true,
+      false,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Tale",
+        "pos": "DET",
+        "lemma": "tale",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "padre",
+        "pos": "NOUN",
+        "lemma": "padre",
+        "space": false,
+        "align": [
+          1
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ",",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "punct",
+        "mark": ""
+      },
+      {
+        "text": "tale",
+        "pos": "DET",
+        "lemma": "tale",
+        "space": true,
+        "align": [
+          3
+        ],
+        "dep": "det",
+        "mark": ""
+      },
+      {
+        "text": "figlio",
+        "pos": "NOUN",
+        "lemma": "figlio",
+        "space": false,
+        "align": [
+          4
+        ],
+        "dep": "appos",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          5
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  },
+  {
+    "en": "While there is life, there is hope.",
+    "en_tokens": [
+      "While",
+      "there",
+      "is",
+      "life",
+      ",",
+      "there",
+      "is",
+      "hope",
+      "."
+    ],
+    "en_space": [
+      true,
+      true,
+      true,
+      false,
+      true,
+      true,
+      true,
+      false,
+      false
+    ],
+    "tokens": [
+      {
+        "text": "Finché",
+        "pos": "ADV",
+        "lemma": "finché",
+        "space": true,
+        "align": [
+          0
+        ],
+        "dep": "advmod",
+        "mark": ""
+      },
+      {
+        "text": "c'",
+        "pos": "PRON",
+        "lemma": "ci",
+        "space": false,
+        "align": [
+          1
+        ],
+        "dep": "expl",
+        "mark": "reflexive"
+      },
+      {
+        "text": "è",
+        "pos": "VERB",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          2
+        ],
+        "dep": "ROOT",
+        "mark": ""
+      },
+      {
+        "text": "vita",
+        "pos": "NOUN",
+        "lemma": "vita",
+        "space": false,
+        "align": [
+          3
+        ],
+        "dep": "nsubj",
+        "mark": ""
+      },
+      {
+        "text": ",",
+        "pos": "PUNCT",
+        "lemma": ",",
+        "space": true,
+        "align": [
+          4
+        ],
+        "dep": "punct",
+        "mark": ""
+      },
+      {
+        "text": "c'",
+        "pos": "PRON",
+        "lemma": "ci",
+        "space": false,
+        "align": [
+          5
+        ],
+        "dep": "expl",
+        "mark": "reflexive"
+      },
+      {
+        "text": "è",
+        "pos": "VERB",
+        "lemma": "essere",
+        "space": true,
+        "align": [
+          6
+        ],
+        "dep": "conj",
+        "mark": ""
+      },
+      {
+        "text": "speranza",
+        "pos": "NOUN",
+        "lemma": "speranza",
+        "space": false,
+        "align": [
+          7
+        ],
+        "dep": "nsubj",
+        "mark": ""
+      },
+      {
+        "text": ".",
+        "pos": "PUNCT",
+        "lemma": ".",
+        "space": false,
+        "align": [
+          8
+        ],
+        "dep": "punct",
+        "mark": ""
+      }
+    ]
+  }
+]
