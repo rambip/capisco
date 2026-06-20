@@ -1,13 +1,17 @@
 name: Deploy viewer to Pages
 
-# The viewer is a single self-contained file and pulls decks from the latest
-# GitHub release at runtime, so the Pages artifact is just viewer.html -> index.html.
+# Publishes the viewer as index.html plus the decks/ it serves. GitHub release assets
+# can't be fetched cross-origin (the signed download host sends no CORS header), so we
+# download the latest release's .json decks here and serve them same-origin from decks/.
+# Re-run this after building/uploading new decks (e.g. via build_decks.py).
 
 on:
   push:
     branches: [main]
     paths: [viewer.html, .github/workflows/pages.yml]
   workflow_dispatch:
+  release:
+    types: [published, edited]
 
 permissions:
   contents: read
@@ -27,9 +31,16 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Assemble site
+        env:
+          GH_TOKEN: ${{ github.token }}
         run: |
-          mkdir -p _site
+          set -euo pipefail
+          mkdir -p _site/decks
           cp viewer.html _site/index.html
+          # Pull deck .json assets from the latest release (if any) and serve them locally.
+          gh release download --repo "$GITHUB_REPOSITORY" --dir _site/decks --pattern '*.json' || true
+          # Write the chooser's manifest: a JSON array of the deck filenames.
+          python3 -c 'import json,glob,os; os.chdir("_site/decks"); names=sorted(f for f in glob.glob("*.json") if f!="index.json"); open("index.json","w").write(json.dumps(names)); print("decks:", names)'
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

@@ -255,9 +255,9 @@
       <div id="placeholder">
         <h2 id="chooser-title">Choose a deck</h2>
         <div id="deck-list"></div>
-        <span id="deck-empty" class="hint" style="display:none">No published decks found (the latest GitHub release has no <code>.json</code> assets).</span>
+        <span id="deck-empty" class="hint" style="display:none">No decks published yet.</span>
         <button id="load-big">or load a file…</button>
-        <span class="hint">decks load from the latest GitHub release; on <code>file://</code> use “load a file”.</span>
+        <span class="hint">decks are served with this page; on <code>file://</code> use “load a file”.</span>
       </div>
       <div id="empty-msg" style="display:none"></div>
       <div id="it-line" class="line"></div>
@@ -633,42 +633,27 @@ $("file").addEventListener("change", (e) => {
 });
 
 // Deck chooser: fetch a manifest of hosted decks and list them. Clicking one sets
-// Decks are published as .json assets on the project's latest GitHub release; the
-// chooser lists every .json asset there. ?deck=<asset-name> deep-links a deck (the
-// asset is resolved against the latest release on load), so URLs stay short and
-// shareable, e.g. ?deck=b1.json#392. Fails quietly on file:// (no network) -> use the
-// "load a file" button instead.
-const GH_REPO = "rambip/capisco";  // owner/repo; edit if you fork
-const RELEASE_API = `https://api.github.com/repos/${GH_REPO}/releases/latest`;
+// Decks are served same-origin from decks/ alongside this page; decks/index.json lists
+// the available deck filenames. (GitHub release assets can't be fetched cross-origin —
+// the signed download host sends no CORS header — so the Pages workflow copies the
+// release's .json assets into decks/ at deploy time and writes index.json.)
+// ?deck=<name> deep-links a deck, so URLs stay short, e.g. ?deck=b1.json#392.
+// Fails quietly on file:// (no decks/ dir) -> use the "load a file" button instead.
+const DECKS_DIR = "decks/";
+const DECKS_INDEX = DECKS_DIR + "index.json";
 const LEVEL_LABELS = {
   a1: "beginner", a2: "elementary", b1: "intermediate",
   b2: "upper-intermediate", c1: "advanced", c2: "proficiency",
 };
 
-let _assetsPromise = null;
-// Resolve to a {name -> browser_download_url} map of the latest release's .json assets.
-function latestDeckAssets() {
-  if (!_assetsPromise) {
-    _assetsPromise = fetch(RELEASE_API)
-      .then((r) => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
-      .then((rel) => {
-        const map = {};
-        (rel.assets || [])
-          .filter((a) => a.name.toLowerCase().endsWith(".json"))
-          .forEach((a) => { map[a.name] = a.browser_download_url; });
-        return map;
-      });
-  }
-  return _assetsPromise;
-}
-
 function renderChooser() {
   const list = $("deck-list");
   list.innerHTML = "";
   $("deck-empty").style.display = "none";
-  latestDeckAssets()
-    .then((assets) => {
-      const names = Object.keys(assets).sort();
+  fetch(DECKS_INDEX)
+    .then((r) => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+    .then((names) => {
+      names = (names || []).filter((n) => /\.json$/i.test(n)).sort();
       if (!names.length) { $("deck-empty").style.display = "block"; return; }
       names.forEach((name) => {
         const key = name.replace(/\.json$/i, "").toLowerCase();
@@ -684,18 +669,14 @@ function renderChooser() {
     .catch(() => { $("deck-empty").style.display = "block"; });
 }
 
-// On start: ?deck=<asset-name> resolves to a .json asset on the latest release and
-// loads it; the hash "#<n>" deep-links to that sentence. Without ?deck, show chooser.
+// On start: ?deck=<name> loads decks/<name>; the hash "#<n>" deep-links to that
+// sentence. Without ?deck, show the chooser.
 function init() {
   const deck = new URLSearchParams(location.search).get("deck");
   const startIdx = location.hash ? parseInt(location.hash.slice(1), 10) : null;
   if (!deck) { renderChooser(); render(); return; }
-  latestDeckAssets()
-    .then((assets) => {
-      const url = assets[deck];
-      if (!url) throw new Error(`deck "${deck}" not found on the latest release`);
-      return fetch(url).then((r) => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); });
-    })
+  fetch(DECKS_DIR + deck)
+    .then((r) => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
     .then((parsed) => loadParsed(parsed, startIdx))
     .catch((err) => { alert("Could not load deck: " + err.message); renderChooser(); render(); });
 }
