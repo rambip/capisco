@@ -1,0 +1,705 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Italian POS viewer</title>
+<style>
+  :root {
+    --fg: #1f2937;
+    --muted: #9ca3af;
+    --line: #e5e7eb;
+    --hl: #fde68a;            /* aligned-English highlight tint */
+    --accent: #b45309;       /* "keep / review" amber */
+  }
+  * { box-sizing: border-box; }
+  html, body { height: 100%; }
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: var(--fg);
+    background: #fafafa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 24px;
+  }
+  /* One centered column holding everything. */
+  #root {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+  }
+  /* Fixed-height, vertically-centered text area so wrapping to multiple lines
+     never shifts the buttons above/below it. */
+  #stage {
+    width: 100%;
+    height: 210px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  /* Two stacked lines, equal font size. */
+  .line {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px 8px;
+    font-size: 1.6rem;
+    line-height: 1.5;
+    min-height: 1.5em;          /* reserve space so the english line never jumps */
+  }
+  /* Both lines use real inter-token spacing (token.space / en_space), not a flex
+     gap, so clitics ("cos'è") and English punctuation ("it.", "don't") render tight. */
+  #it-line, #en-line { display: block; }
+  #it-line { margin-bottom: 18px; }
+  #en-line { color: #374151; }
+
+  .it-tok { position: relative; cursor: default; padding: 0 1px; }
+  .it-tok:hover { text-decoration: underline dotted var(--muted); }
+
+  /* Reverso + add-to-vocab buttons, shown under the word on hover. Same size as
+     each other, excluded from text selection so they aren't copied with the text. */
+  .word-tools {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    display: none;
+    gap: 6px;
+    padding-top: 2px;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  .it-tok:hover .word-tools { display: flex; }
+  .tool {
+    font-size: .62em;
+    line-height: 1;
+    padding: 3px 7px;
+    border: 1px solid var(--line);
+    border-radius: 6px;
+    background: #fff;
+    color: var(--muted);
+    text-decoration: none;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+  }
+  .tool:hover { color: var(--fg); border-color: var(--muted); }
+  .tool.vocab.added { color: var(--accent); border-color: var(--accent); background: #fffbeb; }
+
+  .en-tok { padding: 0 2px; border-radius: 4px; }
+  .en-tok.hl { background: var(--hl); }          /* visible even when text hidden */
+  /* When translation is hidden: hide the words but keep their box (and highlight). */
+  #en-line.hidden .en-text { visibility: hidden; }
+  /* Marker line for Italian content words with no English counterpart: under the
+     sentence, hidden by default (space reserved so nothing jumps), shown on hover. */
+  #noeq-line {
+    margin-top: 12px;
+    font-size: 1rem;
+    color: var(--muted);
+    font-style: italic;
+    visibility: hidden;
+  }
+  #noeq-line.show { visibility: visible; }
+  #noeq-line span { padding: 1px 6px; border-radius: 4px; }
+  #noeq-line.show span { background: var(--hl); }
+  .noeq-note { margin-top: 6px; color: var(--muted); font-style: italic; font-size: .9em; }
+
+  /* Top bar: deck tabs (left) + vocab/load (right). */
+  #topbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--line);
+  }
+  #tabs { display: flex; gap: 6px; }
+  .tab {
+    font: inherit;
+    font-size: .95rem;
+    padding: 6px 14px;
+    border: 1px solid var(--line);
+    background: #fff;
+    border-radius: 999px;
+    cursor: pointer;
+    color: var(--muted);
+  }
+  .tab.active { background: var(--fg); border-color: var(--fg); color: #fff; }
+  .tab .count { opacity: .7; font-variant-numeric: tabular-nums; margin-left: 4px; }
+  #right-tools { display: flex; gap: 8px; align-items: center; }
+
+  /* Bottom controls */
+  #controls {
+    margin-top: 24px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+  }
+  button {
+    font: inherit;
+    font-size: .95rem;
+    padding: 7px 14px;
+    border: 1px solid var(--line);
+    background: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+    color: var(--fg);
+  }
+  button:hover { background: #f3f4f6; }
+  button:disabled { opacity: .4; cursor: default; }
+
+  #prev, #next { font-size: 1.05rem; padding: 12px 22px; }
+
+  /* Distinct style for the show/hide translation action — dark fill. */
+  #toggle {
+    background: #1f2937;
+    border-color: #1f2937;
+    color: #fff;
+    font-weight: 600;
+  }
+  #toggle:hover { background: #374151; }
+  #toggle:disabled { background: #9ca3af; border-color: #9ca3af; color: #fff; opacity: 1; }
+
+  /* Placeholder / empty-deck message inside the stage. */
+  #placeholder { display: flex; flex-direction: column; align-items: center; gap: 14px; color: var(--muted); }
+  #chooser-title { margin: 0; color: var(--fg); font-size: 1.3rem; font-weight: 600; }
+  #deck-list { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; max-width: 560px; }
+  .deck-btn {
+    font: inherit; cursor: pointer; background: #fff; color: var(--fg);
+    border: 1px solid var(--line); border-radius: 12px; padding: 12px 18px;
+    display: flex; flex-direction: column; align-items: flex-start; gap: 2px; min-width: 110px;
+  }
+  .deck-btn:hover { border-color: var(--muted); }
+  .deck-btn .lvl { font-weight: 600; font-size: 1.05rem; }
+  .deck-btn .sub { color: var(--muted); font-size: .82rem; }
+  #load-big { font-size: .95rem; padding: 8px 16px; border-radius: 10px; color: var(--muted); }
+  #placeholder .hint { font-size: .95rem; }
+  #empty-msg { color: var(--muted); font-size: 1.1rem; }
+
+  /* Hover popup (POS + lemma + role note) */
+  #popup {
+    position: fixed;
+    display: none;
+    background: #fff;
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    box-shadow: 0 6px 24px rgba(0,0,0,.12);
+    padding: 10px 12px;
+    text-align: left;
+    pointer-events: none;
+    z-index: 30;
+    white-space: nowrap;
+  }
+  #pos-badge {
+    display: inline-block;
+    font-size: .78rem;
+    font-weight: 700;
+    letter-spacing: .04em;
+    padding: 3px 9px;
+    border-radius: 6px;
+  }
+  #lemma { margin-top: 8px; font-size: 1rem; color: #4b5563; }
+  #lemma b { color: var(--fg); }
+
+  /* Vocabulary overlay */
+  #vocab-panel {
+    position: fixed;
+    top: 0; right: 0; bottom: 0;
+    width: 320px;
+    max-width: 90vw;
+    background: #fff;
+    border-left: 1px solid var(--line);
+    box-shadow: -8px 0 24px rgba(0,0,0,.08);
+    padding: 18px;
+    overflow-y: auto;
+    display: none;
+    z-index: 40;
+  }
+  #vocab-panel h3 { margin: 0 0 12px; font-size: 1.05rem; display: flex; justify-content: space-between; align-items: center; }
+  #vocab-panel .close { cursor: pointer; color: var(--muted); border: none; background: none; font-size: 1.2rem; }
+  .vrow { display: flex; align-items: baseline; gap: 8px; padding: 7px 0; border-bottom: 1px solid #f3f4f6; }
+  .vrow .w { font-weight: 600; }
+  .vrow .vpos { font-size: .72rem; padding: 1px 7px; border-radius: 999px; }
+  .vrow .vtext { color: var(--muted); font-size: .82rem; }
+  .vrow .vrev { margin-left: auto; color: var(--muted); text-decoration: none; font-size: .9rem; }
+  .vrow .vrev:hover { color: var(--fg); }
+  .vrow .rm { border: none; background: none; color: var(--muted); cursor: pointer; font-size: 1rem; }
+  .vrow .rm:hover { color: #dc2626; }
+  #vocab-empty { color: var(--muted); font-size: .95rem; }
+</style>
+</head>
+<body>
+  <div id="root">
+    <div id="topbar">
+      <div id="tabs">
+        <button class="tab active" data-panel="new">New<span class="count" id="count-new"></span></button>
+        <button class="tab" data-panel="review">Review<span class="count" id="count-review"></span></button>
+      </div>
+      <div id="right-tools">
+        <button id="vocab-btn">★ words <span id="vocab-count">0</span></button>
+        <button id="home">🏠 decks</button>
+      </div>
+    </div>
+
+    <div id="stage">
+      <div id="placeholder">
+        <h2 id="chooser-title">Choose a deck</h2>
+        <div id="deck-list"></div>
+        <span id="deck-empty" class="hint" style="display:none">No published decks found (the latest GitHub release has no <code>.json</code> assets).</span>
+        <button id="load-big">or load a file…</button>
+        <span class="hint">decks load from the latest GitHub release; on <code>file://</code> use “load a file”.</span>
+      </div>
+      <div id="empty-msg" style="display:none"></div>
+      <div id="it-line" class="line"></div>
+      <div id="en-line" class="line hidden"></div>
+      <div id="noeq-line" class="line"><span>∅ no direct English equivalent</span></div>
+    </div>
+
+    <div id="controls">
+      <button id="prev">← prev</button>
+      <button id="toggle">show translation</button>
+      <button id="next">next →</button>
+    </div>
+  </div>
+
+  <div id="popup">
+    <span id="pos-badge"></span>
+    <div id="lemma"></div>
+  </div>
+
+  <div id="vocab-panel">
+    <h3>Vocabulary <button class="close" id="vocab-close">×</button></h3>
+    <div id="vocab-list"></div>
+    <div id="vocab-empty">No words saved yet. Hover a word and tap <b>+</b>.</div>
+  </div>
+
+  <input id="file" type="file" accept=".json,application/json" style="display:none">
+
+<script>
+"use strict";
+
+// POS -> [background, text] for the popup badge + symbol color. PUNCT shows no badge.
+const POS_COLORS = {
+  VERB:  ["#fee2e2", "#b91c1c"],   // red
+  AUX:   ["#ffe1e3", "#9f1239"],   // red, slight rose variation
+  ADJ:   ["#dcfce7", "#15803d"],   // green
+  NOUN:  ["#dbeafe", "#1d4ed8"],   // blue
+  ADV:   ["#f3e8ff", "#7e22ce"],   // purple
+};                                  // everything else -> neutral gray below
+const DEFAULT_COLOR = ["#f3f4f6", "#374151"];  // PRON, DET, ADP, CONJ, NUM, PROPN, ...
+
+// One symbol per POS, grouped into visual families (round = thing, arrow = action,
+// diamond = describer, small = glue). PUNCT: none.
+const SYMBOLS = {
+  NOUN: "●", PROPN: "◉", PRON: "○",   // ● ◉ ○
+  VERB: "→", AUX: "⇢",                      // → ⇢
+  ADJ: "◆", ADV: "◇",                       // ◆ ◇
+  DET: "·", ADP: "⌐", CCONJ: "&", SCONJ: "&", NUM: "#",
+};
+// Morphology/dependency refinements, shown as a parenthetical on the POS badge.
+const MARK_SYMBOLS = { passive: "⇥", reflexive: "↺", gerund: "↝" };  // ⇥ ↺ ↝
+const MARK_LABEL   = { passive: "passive", reflexive: "reflexive", gerund: "-ndo" };
+
+const symbolFor = (t) => MARK_SYMBOLS[t.mark] || SYMBOLS[t.pos] || "";
+
+// Content words that get an explicit "no English equivalent" marker when they align
+// to nothing. Function words / punctuation legitimately map to [] and are not flagged.
+const CONTENT_POS = new Set(["VERB", "NOUN", "ADJ", "ADV", "AUX"]);
+const isNoEq = (t) => CONTENT_POS.has(t.pos) && (!t.align || t.align.length === 0);
+
+// ---- persistence (localStorage; cookies don't work on file:// pages) ----------
+const K_VOCAB = "it-tutor-vocab", K_REVIEW = "it-tutor-review";
+const load = (k) => { try { return JSON.parse(localStorage.getItem(k)) || []; } catch { return []; } };
+const save = (k, v) => localStorage.setItem(k, JSON.stringify(v));
+const sentKey = (s) => s.tokens.map((t) => t.text).join("·");
+
+// ---- state ---------------------------------------------------------------------
+let data = [];            // all loaded sentences
+let order = [];           // shuffled indices for the current deck
+let pos = 0;              // position within `order`
+let panel = "new";        // "new" | "review"
+let showTranslation = false;
+
+const $ = (id) => document.getElementById(id);
+const itLine = $("it-line"), enLine = $("en-line");
+const placeholder = $("placeholder"), emptyMsg = $("empty-msg");
+const popup = $("popup"), posBadge = $("pos-badge"), lemmaEl = $("lemma");
+const toggleBtn = $("toggle");
+
+function shuffle(a) {
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+
+function reviewSet() { return new Set(load(K_REVIEW)); }
+function inReview(s) { return reviewSet().has(sentKey(s)); }
+
+function deckIndices() {
+  const rs = reviewSet();
+  return data
+    .map((s, i) => i)
+    .filter((i) => (panel === "review") === rs.has(sentKey(data[i])));
+}
+
+function buildDeck(keepPos = false) {
+  const prev = order[pos];
+  order = shuffle(deckIndices());
+  pos = keepPos && prev != null ? Math.max(0, order.indexOf(prev)) : 0;
+  if (pos < 0) pos = 0;
+}
+
+// Jump to a sentence by its (stable) data-index: switch to whichever panel holds it,
+// rebuild that deck, and position on it. Returns false if the index is out of range.
+function goToIndex(idx) {
+  if (!Number.isInteger(idx) || idx < 0 || idx >= data.length) return false;
+  panel = inReview(data[idx]) ? "review" : "new";
+  buildDeck();
+  const p = order.indexOf(idx);
+  if (p >= 0) pos = p;
+  return p >= 0;
+}
+
+// The URL hash is just the current sentence's data-index, e.g. "#392".
+function syncHash() {
+  const h = order.length ? "#" + order[pos] : "";
+  if (location.hash === h) return;
+  try { history.replaceState(null, "", location.pathname + location.search + h); }
+  catch { /* file:// in some browsers rejects replaceState; ignore */ }
+}
+
+function loadParsed(parsed, startIdx) {
+  if (!Array.isArray(parsed) || !parsed.length) throw new Error("expected a non-empty array");
+  data = parsed;
+  panel = "new";
+  if (!(startIdx != null && goToIndex(startIdx))) buildDeck();
+  render();
+}
+
+function updateCounts() {
+  const total = data.length, rev = data.filter(inReview).length;
+  $("count-new").textContent = data.length ? `·${total - rev}` : "";
+  $("count-review").textContent = data.length ? `·${rev}` : "";
+  $("vocab-count").textContent = load(K_VOCAB).length;
+}
+
+function render() {
+  const hasData = data.length > 0;
+  document.querySelectorAll(".tab").forEach((t) => t.classList.toggle("active", t.dataset.panel === panel));
+  $("topbar").style.display = "flex";
+  $("controls").style.display = hasData ? "flex" : "none";
+  $("home").style.display = hasData ? "" : "none";
+  placeholder.style.display = hasData ? "none" : "flex";
+  $("tabs").style.visibility = hasData ? "visible" : "hidden";
+  updateCounts();
+
+  if (!hasData) { itLine.style.display = enLine.style.display = "none"; emptyMsg.style.display = "none"; return; }
+
+  const hasCard = order.length > 0;
+  emptyMsg.style.display = hasCard ? "none" : "block";
+  itLine.style.display = hasCard ? "" : "none";
+  enLine.style.display = hasCard ? "" : "none";
+
+  if (!hasCard) {
+    emptyMsg.textContent = panel === "review"
+      ? "No sentences saved for review yet. Reveal a translation to keep one."
+      : "All sentences are in your review pile.";
+    $("prev").disabled = $("next").disabled = toggleBtn.disabled = true;
+    return;
+  }
+
+  $("prev").disabled = pos === 0;
+  $("next").disabled = pos === order.length - 1;
+  toggleBtn.disabled = false;
+  syncHash();
+
+  showTranslation = false;            // re-hide translation on every new sentence
+  const s = data[order[pos]];
+
+  itLine.innerHTML = "";
+  s.tokens.forEach((tok, i) => {
+    const span = document.createElement("span");
+    span.className = "it-tok";
+    span.dataset.i = i;
+    span.appendChild(document.createTextNode(tok.text));
+
+    if (tok.pos !== "PUNCT") {
+      const tools = document.createElement("span");
+      tools.className = "word-tools";
+
+      const rev = document.createElement("a");
+      rev.className = "tool reverso";
+      rev.textContent = "↗";       // ↗
+      rev.href = "https://context.reverso.net/translation/italian-english/" + encodeURIComponent(tok.text);
+      rev.target = "_blank";
+      rev.rel = "noopener";
+      rev.title = "Reverso: " + tok.text;
+
+      const add = document.createElement("button");
+      add.className = "tool vocab";
+      add.textContent = "+";
+      add.title = "Add to vocabulary";
+      add.dataset.i = i;
+      if (hasVocab(tok)) add.classList.add("added");
+
+      tools.append(rev, add);
+      span.appendChild(tools);
+    }
+
+    itLine.appendChild(span);
+    if (tok.space) itLine.appendChild(document.createTextNode(" "));
+  });
+
+  enLine.innerHTML = "";
+  s.en_tokens.forEach((w, j) => {
+    const wrap = document.createElement("span");
+    wrap.className = "en-tok";
+    wrap.dataset.j = j;
+    const t = document.createElement("span");
+    t.className = "en-text";
+    t.textContent = w;
+    wrap.appendChild(t);
+    enLine.appendChild(wrap);
+    if (s.en_space && s.en_space[j]) enLine.appendChild(document.createTextNode(" "));
+  });
+
+  applyTranslationVisibility();
+  highlightNoEq(false);
+  hidePopup();
+}
+
+function applyTranslationVisibility() {
+  enLine.classList.toggle("hidden", !showTranslation);
+  toggleBtn.textContent = showTranslation ? "hide translation" : "show translation";
+}
+
+function highlight(indices, on) {
+  indices.forEach((j) => {
+    const el = enLine.querySelector(`.en-tok[data-j="${j}"]`);
+    if (el) el.classList.toggle("hl", on);
+  });
+}
+
+function highlightNoEq(on) {
+  $("noeq-line").classList.toggle("show", on);
+}
+
+function showPopup(el, tok) {
+  const [bg, fg] = POS_COLORS[tok.pos] || DEFAULT_COLOR;
+  const sym = symbolFor(tok);
+  posBadge.textContent = (sym ? sym + "  " : "") + tok.pos
+                       + (MARK_LABEL[tok.mark] ? ` (${MARK_LABEL[tok.mark]})` : "");
+  posBadge.style.background = bg;
+  posBadge.style.color = fg;
+  lemmaEl.innerHTML = `base form: <b></b>`;
+  lemmaEl.querySelector("b").textContent = tok.lemma;
+  if (isNoEq(tok)) lemmaEl.insertAdjacentHTML("beforeend", `<div class="noeq-note">∅ no direct English equivalent</div>`);
+
+  popup.style.display = "block";
+  const r = el.getBoundingClientRect();
+  const pr = popup.getBoundingClientRect();
+  let left = r.left + r.width / 2 - pr.width / 2;
+  left = Math.max(8, Math.min(left, window.innerWidth - pr.width - 8));
+  let top = r.top - pr.height - 10;
+  if (top < 8) top = r.bottom + 10;            // flip below if no room above
+  popup.style.left = left + "px";
+  popup.style.top = top + "px";
+}
+
+function hidePopup() { popup.style.display = "none"; }
+
+// ---- vocabulary ----------------------------------------------------------------
+function vocabId(tok) { return tok.lemma + "|" + tok.pos; }
+function hasVocab(tok) { return load(K_VOCAB).some((v) => v.id === vocabId(tok)); }
+function addVocab(tok) {
+  const list = load(K_VOCAB);
+  if (list.some((v) => v.id === vocabId(tok))) return;
+  list.push({ id: vocabId(tok), text: tok.text, lemma: tok.lemma, pos: tok.pos });
+  save(K_VOCAB, list);
+  updateCounts();
+}
+function removeVocab(id) {
+  save(K_VOCAB, load(K_VOCAB).filter((v) => v.id !== id));
+  updateCounts();
+  renderVocab();
+  render();                                    // refresh "+" added states
+}
+function renderVocab() {
+  const list = load(K_VOCAB);
+  $("vocab-empty").style.display = list.length ? "none" : "block";
+  const box = $("vocab-list");
+  box.innerHTML = "";
+  list.forEach((v) => {
+    const row = document.createElement("div");
+    row.className = "vrow";
+    row.innerHTML = `<span class="w"></span><span class="vpos"></span><span class="vtext"></span><a class="vrev" target="_blank" rel="noopener" title="Reverso">↗</a><button class="rm" title="remove">×</button>`;
+    row.querySelector(".w").textContent = v.lemma;
+    const [bg, fg] = POS_COLORS[v.pos] || DEFAULT_COLOR;
+    const posEl = row.querySelector(".vpos");
+    posEl.textContent = v.pos;
+    posEl.style.background = bg;
+    posEl.style.color = fg;
+    row.querySelector(".vtext").textContent = v.text !== v.lemma ? v.text : "";
+    row.querySelector(".vrev").href = "https://context.reverso.net/translation/italian-english/" + encodeURIComponent(v.lemma);
+    row.querySelector(".rm").onclick = () => removeVocab(v.id);
+    box.appendChild(row);
+  });
+}
+
+// ---- hover (event delegation on the Italian line) ------------------------------
+itLine.addEventListener("mouseover", (e) => {
+  const span = e.target.closest(".it-tok");
+  if (!span) return;
+  if (e.relatedTarget && span.contains(e.relatedTarget)) return;
+  const tok = data[order[pos]].tokens[+span.dataset.i];
+  if (showTranslation) { highlight(tok.align, true); if (isNoEq(tok)) highlightNoEq(true); }
+  if (tok.pos !== "PUNCT") showPopup(span, tok);
+});
+itLine.addEventListener("mouseout", (e) => {
+  const span = e.target.closest(".it-tok");
+  if (!span) return;
+  if (e.relatedTarget && span.contains(e.relatedTarget)) return;
+  const tok = data[order[pos]].tokens[+span.dataset.i];
+  highlight(tok.align, false);
+  if (isNoEq(tok)) highlightNoEq(false);
+  hidePopup();
+});
+// Add-to-vocab clicks.
+itLine.addEventListener("click", (e) => {
+  const btn = e.target.closest(".vocab");
+  if (!btn) return;
+  e.preventDefault();
+  e.stopPropagation();
+  addVocab(data[order[pos]].tokens[+btn.dataset.i]);
+  btn.classList.add("added");
+});
+
+// ---- controls ------------------------------------------------------------------
+$("prev").onclick = () => { if (pos > 0) { pos--; render(); } };
+$("next").onclick = () => { if (pos < order.length - 1) { pos++; render(); } };
+
+// Revealing the translation means you needed help -> auto-keep it for review.
+toggleBtn.onclick = () => {
+  showTranslation = !showTranslation;
+  applyTranslationVisibility();
+  if (showTranslation && order.length) keepForReview(data[order[pos]]);
+};
+
+function keepForReview(s) {
+  const rs = new Set(load(K_REVIEW));
+  if (rs.has(sentKey(s))) return;
+  rs.add(sentKey(s));
+  save(K_REVIEW, [...rs]);
+  updateCounts();                  // current card stays visible; excluded next deck rebuild
+}
+
+document.querySelectorAll(".tab").forEach((tab) => {
+  tab.onclick = () => { panel = tab.dataset.panel; buildDeck(); render(); };
+});
+
+$("load-big").onclick = () => $("file").click();
+$("home").onclick = () => { location.assign(location.pathname); };  // clear ?deck + #n -> chooser
+$("vocab-btn").onclick = () => { renderVocab(); $("vocab-panel").style.display = "block"; };
+$("vocab-close").onclick = () => { $("vocab-panel").style.display = "none"; };
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "ArrowLeft") $("prev").click();
+  else if (e.key === "ArrowRight") $("next").click();
+  else if (e.key === " ") { e.preventDefault(); toggleBtn.click(); }
+});
+
+$("file").addEventListener("change", (e) => {
+  const file = e.target.files[0];
+  if (!file) return;
+  const reader = new FileReader();
+  reader.onload = () => {
+    try { loadParsed(JSON.parse(reader.result), null); }
+    catch (err) { alert("Could not load file: " + err.message); }
+  };
+  reader.readAsText(file);
+  e.target.value = "";                          // allow re-loading the same file
+});
+
+// Deck chooser: fetch a manifest of hosted decks and list them. Clicking one sets
+// Decks are published as .json assets on the project's latest GitHub release; the
+// chooser lists every .json asset there. ?deck=<asset-name> deep-links a deck (the
+// asset is resolved against the latest release on load), so URLs stay short and
+// shareable, e.g. ?deck=b1.json#392. Fails quietly on file:// (no network) -> use the
+// "load a file" button instead.
+const GH_REPO = "rambip/capisco";  // owner/repo; edit if you fork
+const RELEASE_API = `https://api.github.com/repos/${GH_REPO}/releases/latest`;
+const LEVEL_LABELS = {
+  a1: "beginner", a2: "elementary", b1: "intermediate",
+  b2: "upper-intermediate", c1: "advanced", c2: "proficiency",
+};
+
+let _assetsPromise = null;
+// Resolve to a {name -> browser_download_url} map of the latest release's .json assets.
+function latestDeckAssets() {
+  if (!_assetsPromise) {
+    _assetsPromise = fetch(RELEASE_API)
+      .then((r) => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); })
+      .then((rel) => {
+        const map = {};
+        (rel.assets || [])
+          .filter((a) => a.name.toLowerCase().endsWith(".json"))
+          .forEach((a) => { map[a.name] = a.browser_download_url; });
+        return map;
+      });
+  }
+  return _assetsPromise;
+}
+
+function renderChooser() {
+  const list = $("deck-list");
+  list.innerHTML = "";
+  $("deck-empty").style.display = "none";
+  latestDeckAssets()
+    .then((assets) => {
+      const names = Object.keys(assets).sort();
+      if (!names.length) { $("deck-empty").style.display = "block"; return; }
+      names.forEach((name) => {
+        const key = name.replace(/\.json$/i, "").toLowerCase();
+        const b = document.createElement("button");
+        b.className = "deck-btn";
+        b.innerHTML = `<span class="lvl"></span><span class="sub"></span>`;
+        b.querySelector(".lvl").textContent = LEVEL_LABELS[key] ? key.toUpperCase() : name;
+        b.querySelector(".sub").textContent = LEVEL_LABELS[key] || "";
+        b.onclick = () => { location.search = "?deck=" + encodeURIComponent(name); };
+        list.appendChild(b);
+      });
+    })
+    .catch(() => { $("deck-empty").style.display = "block"; });
+}
+
+// On start: ?deck=<asset-name> resolves to a .json asset on the latest release and
+// loads it; the hash "#<n>" deep-links to that sentence. Without ?deck, show chooser.
+function init() {
+  const deck = new URLSearchParams(location.search).get("deck");
+  const startIdx = location.hash ? parseInt(location.hash.slice(1), 10) : null;
+  if (!deck) { renderChooser(); render(); return; }
+  latestDeckAssets()
+    .then((assets) => {
+      const url = assets[deck];
+      if (!url) throw new Error(`deck "${deck}" not found on the latest release`);
+      return fetch(url).then((r) => { if (!r.ok) throw new Error("HTTP " + r.status); return r.json(); });
+    })
+    .then((parsed) => loadParsed(parsed, startIdx))
+    .catch((err) => { alert("Could not load deck: " + err.message); renderChooser(); render(); });
+}
+init();
+</script>
+</body>
+</html>

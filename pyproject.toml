@@ -1,0 +1,20 @@
+[project]
+name = "capisco"
+version = "0.1.0"
+description = "capisco — offline Italian sentence trainer (Tatoeba + spaCy + LLM word alignment)"
+readme = "README.md"
+requires-python = ">=3.13,<3.14"
+dependencies = [
+    "spacy>=3.8,<3.9",
+    "pydantic>=2.6",
+    "requests>=2.31",
+    "it-core-news-sm",
+    "it-core-news-md",
+    "click>=8.4.1",
+    "polars>=1.41.2",
+    "pyyaml>=6.0.3",
+]
+
+[tool.uv.sources]
+it-core-news-sm = { url = "https://github.com/explosion/spacy-models/releases/download/it_core_news_sm-3.8.0/it_core_news_sm-3.8.0-py3-none-any.whl" }
+it-core-news-md = { url = "https://github.com/explosion/spacy-models/releases/download/it_core_news_md-3.8.0/it_core_news_md-3.8.0-py3-none-any.whl" }

@@ -1,0 +1,9 @@
+# C2 — proficiency. Rare vocabulary (rank > 15000), longest sentences.
+level: C2
+label: C2 · proficiency
+n: 300
+min_rank: 15000
+max_rank: 1000000000
+min_tokens: 6
+max_tokens: 18
+output: decks/c2.json

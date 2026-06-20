@@ -1,0 +1,9 @@
+# B2 — upper intermediate.
+level: B2
+label: B2 · upper-intermediate
+n: 300
+min_rank: 5000
+max_rank: 9000
+min_tokens: 6
+max_tokens: 14
+output: decks/b2.json

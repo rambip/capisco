@@ -1,0 +1,9 @@
+# C1 — advanced.
+level: C1
+label: C1 · advanced
+n: 300
+min_rank: 9000
+max_rank: 15000
+min_tokens: 6
+max_tokens: 16
+output: decks/c1.json

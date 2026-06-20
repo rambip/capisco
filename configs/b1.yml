@@ -1,0 +1,9 @@
+# B1 — intermediate.
+level: B1
+label: B1 · intermediate
+n: 300
+min_rank: 2500
+max_rank: 5000
+min_tokens: 5
+max_tokens: 12
+output: decks/b1.json
